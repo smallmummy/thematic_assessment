@@ -52,13 +52,6 @@ def mock_openai_client():
     Mock OpenAI client for insight generation.
     This is the ONLY external service we mock in integration tests.
     """
-    mock_client = Mock()
-
-    # Mock synchronous client (not used in our async implementation, but good for completeness)
-    mock_sync = Mock()
-    mock_sync.chat.completions.create.return_value = Mock(
-        choices=[Mock(message=Mock(content="Test Title"))]
-    )
 
     # Mock async client (actually used)
     mock_async = Mock()
@@ -102,7 +95,7 @@ def mock_openai_client():
 
     mock_async.chat.completions.create = AsyncMock(side_effect=mock_create)
 
-    return mock_sync, mock_async
+    return mock_async
 
 
 @pytest.fixture
@@ -113,10 +106,9 @@ def insight_service_with_mock(mock_openai_client):
     """
     from unittest.mock import patch
 
-    mock_sync, mock_async = mock_openai_client
+    mock_async = mock_openai_client
 
-    with patch('src.services.insights.OpenAI', return_value=mock_sync), \
-         patch('src.services.insights.AsyncOpenAI', return_value=mock_async):
+    with patch('src.services.insights.AsyncOpenAI', return_value=mock_async):
         service = InsightService(
             api_key="test-key",
             model="gpt-4o",

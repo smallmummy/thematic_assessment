@@ -19,10 +19,8 @@ class TestLambdaHandlerIntegration:
 
     @patch.dict('os.environ', {'OPENAI_API_KEY': 'test-key'})
     @patch('src.services.insights.AsyncOpenAI')
-    @patch('src.services.insights.OpenAI')
     def test_lambda_standalone_full_pipeline(
         self,
-        mock_openai,
         mock_async_openai,
         sample_quality_feedback
     ):
@@ -46,7 +44,6 @@ class TestLambdaHandlerIntegration:
         mock_sync.chat.completions.create.return_value = Mock(
             choices=[Mock(message=Mock(content="Test Title"))]
         )
-        mock_openai.return_value = mock_sync
 
         # Create Lambda event
         event = {
@@ -84,10 +81,8 @@ class TestLambdaHandlerIntegration:
 
     @patch.dict('os.environ', {'OPENAI_API_KEY': 'test-key'})
     @patch('src.services.insights.AsyncOpenAI')
-    @patch('src.services.insights.OpenAI')
     def test_lambda_comparative_full_pipeline(
         self,
-        mock_openai,
         mock_async_openai,
         sample_comparative_baseline,
         sample_comparative_comparison
@@ -113,7 +108,6 @@ class TestLambdaHandlerIntegration:
         mock_sync.chat.completions.create.return_value = Mock(
             choices=[Mock(message=Mock(content="Test Title"))]
         )
-        mock_openai.return_value = mock_sync
 
         # Create Lambda event
         event = {
@@ -156,10 +150,8 @@ class TestLambdaHandlerIntegration:
         'MAX_CLUSTERS': '10'
     })
     @patch('src.services.insights.AsyncOpenAI')
-    @patch('src.services.insights.OpenAI')
     def test_lambda_with_custom_config(
         self,
-        mock_openai,
         mock_async_openai,
         sample_quality_feedback
     ):
@@ -178,7 +170,6 @@ class TestLambdaHandlerIntegration:
         mock_async_openai.return_value = mock_async
 
         mock_sync = Mock()
-        mock_openai.return_value = mock_sync
 
         event = {
             'body': json.dumps({
@@ -195,10 +186,8 @@ class TestLambdaHandlerIntegration:
 
     @patch.dict('os.environ', {'OPENAI_API_KEY': 'test-key'})
     @patch('src.services.insights.AsyncOpenAI')
-    @patch('src.services.insights.OpenAI')
     def test_lambda_error_handling_integration(
         self,
-        mock_openai,
         mock_async_openai
     ):
         """
@@ -206,7 +195,6 @@ class TestLambdaHandlerIntegration:
         """
         # Setup mocks (won't be called due to validation error)
         mock_async_openai.return_value = Mock()
-        mock_openai.return_value = Mock()
 
         # Invalid request - empty baseline
         event = {
@@ -227,10 +215,8 @@ class TestLambdaHandlerIntegration:
 
     @patch.dict('os.environ', {'OPENAI_API_KEY': 'test-key'})
     @patch('src.services.insights.AsyncOpenAI')
-    @patch('src.services.insights.OpenAI')
     def test_lambda_json_parsing_integration(
         self,
-        mock_openai,
         mock_async_openai
     ):
         """
@@ -238,7 +224,6 @@ class TestLambdaHandlerIntegration:
         """
         # Setup mocks
         mock_async_openai.return_value = Mock()
-        mock_openai.return_value = Mock()
 
         # Invalid JSON
         event = {
@@ -255,10 +240,8 @@ class TestLambdaHandlerIntegration:
 
     @patch.dict('os.environ', {'OPENAI_API_KEY': 'test-key'})
     @patch('src.services.insights.AsyncOpenAI')
-    @patch('src.services.insights.OpenAI')
     def test_lambda_real_clustering_behavior(
         self,
-        mock_openai,
         mock_async_openai
     ):
         """
@@ -276,7 +259,6 @@ class TestLambdaHandlerIntegration:
         mock_async = Mock()
         mock_async.chat.completions.create = AsyncMock(side_effect=mock_create)
         mock_async_openai.return_value = mock_async
-        mock_openai.return_value = Mock()
 
         # Diverse sentences with stronger similarity within themes
         # More sentences per theme for better clustering

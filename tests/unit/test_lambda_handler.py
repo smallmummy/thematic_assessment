@@ -3,6 +3,7 @@ Unit tests for Lambda handler.
 """
 
 import json
+import sys
 import pytest
 from unittest.mock import Mock, patch
 
@@ -17,8 +18,21 @@ from lambda_handler import (
 class TestLambdaHandler:
     """Test Lambda handler function."""
 
+    def setup_method(self):
+        """Clear module cache before each test to ensure clean imports."""
+        # Clear the global TextAnalyzer cache in lambda_handler module
+        # This ensures each test gets a fresh analyzer instance (not cached from previous tests)
+        import lambda_handler
+        lambda_handler._text_analyzer_cache = None
+        lambda_handler._openai_api_key_cache = None
+
+        # Remove the text_analyzer module from cache to force re-import
+        # This ensures that @patch decorators work correctly with delayed imports
+        if 'src.services.text_analyzer' in sys.modules:
+            del sys.modules['src.services.text_analyzer']
+
     @patch.dict('os.environ', {'OPENAI_API_KEY': 'test-key'})
-    @patch('lambda_handler.TextAnalyzer')
+    @patch('src.services.text_analyzer.TextAnalyzer')
     def test_lambda_handler_standalone_success(self, mock_analyzer_class):
         """Test successful standalone analysis via Lambda."""
         # Setup mock
@@ -57,7 +71,7 @@ class TestLambdaHandler:
         assert len(body['clusters']) == 1
 
     @patch.dict('os.environ', {'OPENAI_API_KEY': 'test-key'})
-    @patch('lambda_handler.TextAnalyzer')
+    @patch('src.services.text_analyzer.TextAnalyzer')
     def test_lambda_handler_comparative_success(self, mock_analyzer_class):
         """Test successful comparative analysis via Lambda."""
         # Setup mock
@@ -94,7 +108,7 @@ class TestLambdaHandler:
         body = json.loads(response['body'])
         assert 'clusters' in body
 
-    @patch.dict('os.environ', {})
+    @patch.dict('os.environ', {'OPENAI_API_KEY': ''}, clear=True)
     def test_lambda_handler_missing_api_key(self):
         """Test error when API key is missing."""
         event = {
@@ -147,7 +161,7 @@ class TestLambdaHandler:
         'MIN_CLUSTER_SIZE': '5',
         'MAX_CLUSTERS': '15'
     })
-    @patch('lambda_handler.TextAnalyzer')
+    @patch('src.services.text_analyzer.TextAnalyzer')
     def test_lambda_handler_custom_config(self, mock_analyzer_class):
         """Test that custom configuration is used."""
         mock_analyzer = Mock()
@@ -177,7 +191,7 @@ class TestLambdaHandler:
         )
 
     @patch.dict('os.environ', {'OPENAI_API_KEY': 'test-key'})
-    @patch('lambda_handler.TextAnalyzer')
+    @patch('src.services.text_analyzer.TextAnalyzer')
     def test_lambda_handler_analysis_error(self, mock_analyzer_class):
         """Test error handling during analysis."""
         mock_analyzer = Mock()
@@ -202,7 +216,7 @@ class TestLambdaHandler:
 class TestHandleStandaloneAnalysis:
     """Test standalone analysis handler."""
 
-    @patch('lambda_handler.TextAnalyzer')
+    @patch('src.services.text_analyzer.TextAnalyzer')
     def test_handle_standalone_analysis_success(self, mock_analyzer_class):
         """Test successful standalone analysis."""
         mock_analyzer = Mock()
@@ -219,13 +233,13 @@ class TestHandleStandaloneAnalysis:
         }
 
         response = handle_standalone_analysis(
-            body, 'test-key', 'embed-model', 'sentiment-model', 3, 20
+            body, mock_analyzer
         )
 
         assert response['statusCode'] == 200
         mock_analyzer.analyze_standalone.assert_called_once()
 
-    @patch('lambda_handler.TextAnalyzer')
+    @patch('src.services.text_analyzer.TextAnalyzer')
     def test_handle_standalone_analysis_value_error(self, mock_analyzer_class):
         """Test value error handling."""
         mock_analyzer = Mock()
@@ -239,7 +253,7 @@ class TestHandleStandaloneAnalysis:
         }
 
         response = handle_standalone_analysis(
-            body, 'test-key', 'embed', 'sentiment', 3, 20
+            body, mock_analyzer
         )
 
         assert response['statusCode'] == 400
@@ -250,7 +264,7 @@ class TestHandleStandaloneAnalysis:
 class TestHandleComparativeAnalysis:
     """Test comparative analysis handler."""
 
-    @patch('lambda_handler.TextAnalyzer')
+    @patch('src.services.text_analyzer.TextAnalyzer')
     def test_handle_comparative_analysis_success(self, mock_analyzer_class):
         """Test successful comparative analysis."""
         mock_analyzer = Mock()
@@ -268,7 +282,7 @@ class TestHandleComparativeAnalysis:
         }
 
         response = handle_comparative_analysis(
-            body, 'test-key', 'embed', 'sentiment', 3, 20
+            body, mock_analyzer
         )
 
         assert response['statusCode'] == 200
