@@ -1,0 +1,20 @@
+{
+  "surveyTitle": "UI Redesign Comparison Study",
+  "theme": "User Experience",
+  "baseline": [
+    {"sentence": "The old interface is intuitive", "id": "b1"},
+    {"sentence": "Navigation is straightforward", "id": "b2"},
+    {"sentence": "Design is clean", "id": "b3"},
+    {"sentence": "Loading times are acceptable", "id": "b4"},
+    {"sentence": "Some features are hard to find", "id": "b5"},
+    {"sentence": "Search function works well", "id": "b6"}
+  ],
+  "comparison": [
+    {"sentence": "The new interface is much better", "id": "c1"},
+    {"sentence": "Navigation has improved significantly", "id": "c2"},
+    {"sentence": "Love the updated design", "id": "c3"},
+    {"sentence": "Much faster loading times now", "id": "c4"},
+    {"sentence": "All features are easier to access", "id": "c5"},
+    {"sentence": "Search is more powerful", "id": "c6"}
+  ]
+}

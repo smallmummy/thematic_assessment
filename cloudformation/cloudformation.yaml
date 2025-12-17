@@ -1,0 +1,305 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Thematic Assessment Microservice - Lambda Container with API Gateway'
+
+Parameters:
+  ProjectName:
+    Type: String
+    Default: thematic-assessment
+    Description: Project name used for resource naming
+
+  OpenAIApiKeySecretArn:
+    Type: String
+    Description: ARN of the Secrets Manager secret containing the OpenAI API key
+    AllowedPattern: '^arn:aws:secretsmanager:[a-z0-9-]+:\d{12}:secret:.+$'
+    ConstraintDescription: Must be a valid Secrets Manager ARN
+
+  LambdaMemorySize:
+    Type: Number
+    Default: 3008
+    MinValue: 2048
+    MaxValue: 10240
+    Description: Lambda memory size in MB (3008 MB recommended for ML workloads)
+
+  LambdaTimeout:
+    Type: Number
+    Default: 300
+    MinValue: 60
+    MaxValue: 900
+    Description: Lambda timeout in seconds (300s = 5 minutes)
+
+  MinClusterSize:
+    Type: Number
+    Default: 3
+    MinValue: 2
+    MaxValue: 10
+    Description: Minimum cluster size for HDBSCAN
+
+  MaxClusters:
+    Type: Number
+    Default: 20
+    MinValue: 5
+    MaxValue: 50
+    Description: Maximum number of clusters to return
+
+  EmbeddingModel:
+    Type: String
+    Default: all-MiniLM-L6-v2
+    Description: SentenceTransformer model name for embeddings
+
+  SentimentModel:
+    Type: String
+    Default: finiteautomata/bertweet-base-sentiment-analysis
+    Description: HuggingFace model name for sentiment analysis
+
+  EcrRepositoryUri:
+    Type: String
+    Description: ECR repository URI for the Lambda container image (e.g., 123456789012.dkr.ecr.us-east-1.amazonaws.com/thematic-assessment)
+    AllowedPattern: '^\d{12}\.dkr\.ecr\.[a-z0-9-]+\.amazonaws\.com/.+$'
+    ConstraintDescription: Must be a valid ECR repository URI
+
+  ImageTag:
+    Type: String
+    Default: latest
+    Description: Docker image tag to deploy
+
+Resources:
+  # CloudWatch Log Group for Lambda
+  LambdaLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/lambda/${ProjectName}-function'
+      RetentionInDays: 30
+
+  # IAM Role for Lambda Execution
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub '${ProjectName}-lambda-role'
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: SecretsManagerAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - secretsmanager:GetSecretValue
+                Resource: !Ref OpenAIApiKeySecretArn
+
+  # Lambda Function (Container Image)
+  LambdaFunction:
+    Type: AWS::Lambda::Function
+    DependsOn: LambdaLogGroup
+    Properties:
+      FunctionName: !Sub '${ProjectName}-function'
+      Description: Thematic assessment microservice for survey text analysis
+      PackageType: Image
+      Code:
+        ImageUri: !Sub '${EcrRepositoryUri}:${ImageTag}'
+      Role: !GetAtt LambdaExecutionRole.Arn
+      MemorySize: !Ref LambdaMemorySize
+      Timeout: !Ref LambdaTimeout
+      Environment:
+        Variables:
+          OPENAI_API_KEY_SECRET_ARN: !Ref OpenAIApiKeySecretArn
+          MIN_CLUSTER_SIZE: !Ref MinClusterSize
+          MAX_CLUSTERS: !Ref MaxClusters
+          EMBEDDING_MODEL: !Ref EmbeddingModel
+          SENTIMENT_MODEL: !Ref SentimentModel
+          LOG_LEVEL: INFO
+      Architectures:
+        - x86_64
+
+  # Lambda Permission for API Gateway
+  LambdaApiGatewayInvokePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !GetAtt LambdaFunction.Arn
+      Action: lambda:InvokeFunction
+      Principal: apigateway.amazonaws.com
+      SourceArn: !Sub 'arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${RestApi}/*/*/*'
+
+  # API Gateway REST API
+  RestApi:
+    Type: AWS::ApiGateway::RestApi
+    Properties:
+      Name: !Sub '${ProjectName}-api'
+      Description: API for thematic assessment microservice
+      EndpointConfiguration:
+        Types:
+          - REGIONAL
+      Policy:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal: '*'
+            Action: execute-api:Invoke
+            Resource: '*'
+
+  # API Gateway Resource (/analyze)
+  AnalyzeResource:
+    Type: AWS::ApiGateway::Resource
+    Properties:
+      RestApiId: !Ref RestApi
+      ParentId: !GetAtt RestApi.RootResourceId
+      PathPart: analyze
+
+  # API Gateway Method (POST /analyze)
+  AnalyzeMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      RestApiId: !Ref RestApi
+      ResourceId: !Ref AnalyzeResource
+      HttpMethod: POST
+      AuthorizationType: NONE
+      ApiKeyRequired: true
+      Integration:
+        Type: AWS_PROXY
+        IntegrationHttpMethod: POST
+        Uri: !Sub 'arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaFunction.Arn}/invocations'
+        IntegrationResponses:
+          - StatusCode: 200
+      MethodResponses:
+        - StatusCode: 200
+          ResponseModels:
+            application/json: Empty
+          ResponseParameters:
+            method.response.header.Access-Control-Allow-Origin: true
+
+  # OPTIONS method for CORS preflight
+  AnalyzeOptionsMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      RestApiId: !Ref RestApi
+      ResourceId: !Ref AnalyzeResource
+      HttpMethod: OPTIONS
+      AuthorizationType: NONE
+      ApiKeyRequired: false
+      Integration:
+        Type: MOCK
+        IntegrationResponses:
+          - StatusCode: 200
+            ResponseParameters:
+              method.response.header.Access-Control-Allow-Headers: "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'"
+              method.response.header.Access-Control-Allow-Methods: "'POST,OPTIONS'"
+              method.response.header.Access-Control-Allow-Origin: "'*'"
+            ResponseTemplates:
+              application/json: ''
+        RequestTemplates:
+          application/json: '{"statusCode": 200}'
+      MethodResponses:
+        - StatusCode: 200
+          ResponseModels:
+            application/json: Empty
+          ResponseParameters:
+            method.response.header.Access-Control-Allow-Headers: true
+            method.response.header.Access-Control-Allow-Methods: true
+            method.response.header.Access-Control-Allow-Origin: true
+
+  # API Gateway Deployment
+  ApiDeployment:
+    Type: AWS::ApiGateway::Deployment
+    DependsOn:
+      - AnalyzeMethod
+      - AnalyzeOptionsMethod
+    Properties:
+      RestApiId: !Ref RestApi
+      Description: Production deployment
+
+  # API Gateway Stage
+  ApiStage:
+    Type: AWS::ApiGateway::Stage
+    Properties:
+      RestApiId: !Ref RestApi
+      DeploymentId: !Ref ApiDeployment
+      StageName: prod
+      Description: Production stage
+      TracingEnabled: true
+      MethodSettings:
+        - ResourcePath: '/*'
+          HttpMethod: '*'
+          LoggingLevel: INFO
+          DataTraceEnabled: true
+          MetricsEnabled: true
+          ThrottlingBurstLimit: 50
+          ThrottlingRateLimit: 100
+
+  # API Key for authentication
+  ApiKey:
+    Type: AWS::ApiGateway::ApiKey
+    DependsOn: ApiStage
+    Properties:
+      Name: !Sub '${ProjectName}-api-key'
+      Description: API Key for thematic assessment microservice
+      Enabled: true
+      StageKeys:
+        - RestApiId: !Ref RestApi
+          StageName: !Ref ApiStage
+
+  # Usage Plan
+  UsagePlan:
+    Type: AWS::ApiGateway::UsagePlan
+    DependsOn: ApiStage
+    Properties:
+      UsagePlanName: !Sub '${ProjectName}-usage-plan'
+      Description: Usage plan for thematic assessment API
+      ApiStages:
+        - ApiId: !Ref RestApi
+          Stage: !Ref ApiStage
+      Throttle:
+        BurstLimit: 50
+        RateLimit: 100
+      Quota:
+        Limit: 10000
+        Period: MONTH
+
+  # Link API Key to Usage Plan
+  UsagePlanKey:
+    Type: AWS::ApiGateway::UsagePlanKey
+    Properties:
+      KeyId: !Ref ApiKey
+      KeyType: API_KEY
+      UsagePlanId: !Ref UsagePlan
+
+Outputs:
+  ApiGatewayUrl:
+    Description: API Gateway endpoint URL
+    Value: !Sub 'https://${RestApi}.execute-api.${AWS::Region}.amazonaws.com/prod/analyze'
+    Export:
+      Name: !Sub '${ProjectName}-api-url'
+
+  ApiKeyId:
+    Description: API Key ID (use AWS CLI to retrieve the actual key value)
+    Value: !Ref ApiKey
+    Export:
+      Name: !Sub '${ProjectName}-api-key-id'
+
+  LambdaFunctionArn:
+    Description: Lambda function ARN
+    Value: !GetAtt LambdaFunction.Arn
+    Export:
+      Name: !Sub '${ProjectName}-lambda-arn'
+
+  LambdaFunctionName:
+    Description: Lambda function name
+    Value: !Ref LambdaFunction
+    Export:
+      Name: !Sub '${ProjectName}-lambda-name'
+
+  RestApiId:
+    Description: API Gateway REST API ID
+    Value: !Ref RestApi
+    Export:
+      Name: !Sub '${ProjectName}-api-id'
+
+  RetrieveApiKeyCommand:
+    Description: AWS CLI command to retrieve the API key value
+    Value: !Sub 'aws apigateway get-api-key --api-key ${ApiKey} --include-value --query value --output text'

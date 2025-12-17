@@ -1,0 +1,29 @@
+# Core ML/NLP Libraries
+sentence-transformers==5.2.0
+hdbscan==0.8.41
+transformers==4.57.3
+torch==2.6.0
+scikit-learn==1.8.0
+
+# OpenAI API
+openai==2.11.0
+
+# Data Processing
+numpy==2.2.6
+pandas==2.3.3
+
+# Validation
+pydantic==2.12.5
+
+# AWS SDK
+boto3==1.42.9
+
+# Testing
+pytest==9.0.2
+pytest-cov==7.0.0
+pytest-asyncio==1.3.0
+moto==5.1.18
+
+# Utilities
+python-dotenv==1.2.1
+dotenv==0.9.9

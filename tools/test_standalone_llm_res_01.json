@@ -1,0 +1,181 @@
+{
+  "clusters": [
+    {
+      "title": "Robinhood: Mixed Sentiments on Investment Experience",
+      "sentiment": "positive",
+      "keyInsights": [
+        "Many users praise Robinhood as the **best investment app**, highlighting its ease of use and user-friendly interface, which makes investing accessible for both new and casual investors.",
+        "Despite positive feedback, there are significant concerns about **security and reliability**, with some users expressing distrust due to perceived shady practices and issues with accessing funds.",
+        "The app's **user experience** is frequently commended for being visually clean and informative, making it a preferred choice among those who value intuitive design in financial apps."
+      ],
+      "mapped_sentences": [
+        "Robinhood will trap your money",
+        "Best Investment App",
+        "Best investment app",
+        "Bar none the best investment APP in the industry",
+        "Been using this app for several years and they have truly made it a convenient way for everyone to invest",
+        "Best UX for any investing app",
+        "Excellent Investment App, very informative, stocks at the Robinhood App well explained",
+        "I’m excited to continue growing my portfolio and this app has made investing easy for this newbie",
+        "Love Robinhood above all other investment apps",
+        "I am so glad I found out about Robinhood, what an easy to use app to invest in the stock market",
+        "I never been an investor",
+        "Robinhood makes investing easy for people like me that may be a little apprehensive about jumping in",
+        "Robinhood is really easy to navigate and more user friendly to someone who is much more casual when it comes to investing",
+        "As a new investor, I've found Robinhood incredibly user friendly and visually clean",
+        "DO NOT INVEST WITH ROBINHOOD",
+        "They do jot give you the option to delete account as well",
+        "Why am I Waking up to invest One of my crypto, withdrew I need help understanding why a percentage of it got withdrewn I need that returned Robinhood",
+        "Still trying to get my money out",
+        "Fantastic modern financial app with solid security measures to ensure your money is safe",
+        "Horrible Ponzi Scheme app that will take your hard earned money",
+        "I have 80% money at fidelity , I will move to robinhood if we have those supported",
+        "Withholding my money",
+        "They have lost trust with our money",
+        "I’m in the learning phase of investing to build for the future and this app is very helpful",
+        "I’ve made some great money with Robin Hood and I will continue to do so",
+        "Day trading laws",
+        "The app is great for investing so I can buy more hookers and blow for my dog",
+        "They only allowed me to open up a Robinhood Managed account which requires a fee instead of an individually managed account where I choose what to invest in",
+        "You do everything you can to slow the process down and make it unclear so you guys make money",
+        "Ez money",
+        "Worst investment app"
+      ]
+    },
+    {
+      "title": "Account Withdrawal Issues and Restrictions",
+      "sentiment": "negative",
+      "keyInsights": [
+        "Numerous customers report **difficulty withdrawing** their money, citing account restrictions and app malfunctions as primary causes.",
+        "There is a recurring theme of accounts being **locked** or restricted, often without clear communication or reasons provided to the customer.",
+        "Customers express frustration over the **lengthy review processes** and the demand for additional personal information, which delays access to their funds."
+      ],
+      "mapped_sentences": [
+        "Doesn’t even let you withdrawal the money that u earned and Invested",
+        "Locked up my money and made it extremely difficult to withdraw… do not recommend",
+        "Holding my money hostage",
+        "Be aware of having all your money there",
+        "Still trying to get my money out",
+        "Locked on old information from years ago, yes,  they keep your information forever even when you close out of the account",
+        "Cannot withdraw money because their stupid app doesn’t work and they have no workaround, support is absolutely terrible",
+        "They will lock your account and make you wait a week plus to review it and ask for all kinds of personal information"
+      ]
+    },
+    {
+      "title": "Customer Frustration Over Money Access",
+      "sentiment": "negative",
+      "keyInsights": [
+        "Customers are **demanding refunds**, indicating dissatisfaction with the service or product, as seen in multiple requests for money back.",
+        "There is a strong desire for **financial autonomy**, with customers expressing a need to control their funds and make independent decisions.",
+        "The repeated emphasis on **money retrieval** suggests a potential issue with delayed or blocked access to funds, which is causing significant customer dissatisfaction."
+      ],
+      "mapped_sentences": [
+        "I want my money back",
+        "Give me back my money",
+        "Withholding my money",
+        "Let me do what I want with my money",
+        "lets me buy assets with that money"
+      ]
+    },
+    {
+      "title": "Simplified Investing for Beginners",
+      "sentiment": "positive",
+      "keyInsights": [
+        "The platform has **simplified** investing, making it accessible for those with **zero knowledge**.",
+        "Educational resources like 'Learn to Invest' are crucial in **empowering** users who **don't know** about investing.",
+        "The focus on **easy investing** attracts users who are new to **trading and investing**."
+      ],
+      "mapped_sentences": [
+        "If people don’t know about investing",
+        "Learn to Invest",
+        "Trading and Investing",
+        "I don’t know anything about investing in stocks",
+        "Easy investing"
+      ]
+    },
+    {
+      "title": "Customer Concerns on Money Loss",
+      "sentiment": "negative",
+      "keyInsights": [
+        "Customers report **significant financial losses** linked to their accounts, indicating a need for improved **account security** and **error prevention**.",
+        "Feedback highlights a **perceived responsibility** of the service provider for financial discrepancies, suggesting a need for better **communication** and **clarity** on account management processes.",
+        "Specific incidents, such as **downtime on leap year**, are mentioned as causes for money loss, pointing to the need for **system reliability** and **contingency planning** during unusual time periods."
+      ],
+      "mapped_sentences": [
+        "Have lost so much money",
+        "Money lost in that period is your fault",
+        "don’t know why money was taken out of my account twice",
+        "Stole my money during downtime on leap year"
+      ]
+    },
+    {
+      "title": "Customer Concerns: Money Access Issues",
+      "sentiment": "negative",
+      "keyInsights": [
+        "Customers feel their funds are being **withheld** for extended periods, leading to frustration and distrust.",
+        "There is a perception that the company is **unjustly** holding money, with some describing the actions as **criminal**.",
+        "The language used suggests a belief that the company **steals** money, indicating a severe breakdown in trust that needs urgent addressing."
+      ],
+      "mapped_sentences": [
+        "Holding my money hostage",
+        "They have held my money hostage for a week now it’s criminal",
+        "Steals your money"
+      ]
+    },
+    {
+      "title": "Trust Issues with Financial Management",
+      "sentiment": "negative",
+      "keyInsights": [
+        "Customers express **distrust** in the company's ability to manage **money** securely, suggesting a need for improved **transparency** and communication.",
+        "Feedback indicates a **pattern** of skepticism regarding the company's **registration process**, highlighting a potential barrier to **customer confidence**.",
+        "The repeated emphasis on **trust** and **money** suggests a critical need for the company to **rebuild** its reputation through **reliable** financial practices and **clear** policies."
+      ],
+      "mapped_sentences": [
+        "how can u trust them with your money",
+        "They have lost trust with our money",
+        "If you can’t register under your current information, why trust them with your money or investments"
+      ]
+    },
+    {
+      "title": "Account Management Issues",
+      "sentiment": "negative",
+      "keyInsights": [
+        "Customers find it **difficult** to perform basic actions like depositing money or managing stocks, indicating a need for **simplified** processes.",
+        "The process of **selling shares** and transferring money to accounts is problematic, suggesting improvements in the **transaction workflow** are necessary.",
+        "Instances where shares are sold without customers receiving their **money** highlight a critical issue in the **financial transaction system** that needs urgent attention."
+      ],
+      "mapped_sentences": [
+        "I is difficult at times finding how to do an action such as deposit money to my account or work with an existing stock",
+        "give more money instead of receiving",
+        "They sold my shares and I didn’t even get the money for it"
+      ]
+    },
+    {
+      "title": "Issues with Options Pricing Clarity",
+      "sentiment": "negative",
+      "keyInsights": [
+        "Customers are **confused** about initial costs in multileg options combos, indicating a need for clearer **cost breakdowns**.",
+        "There is a **lack of clarity** on how option prices change, suggesting that more **transparent pricing** information is needed for users.",
+        "The perception that options are **damaged quickly** and money is subtracted too fast highlights a need for improved **transaction transparency**."
+      ],
+      "mapped_sentences": [
+        "If you sell a multileg options combo it doesn't tell you what your initial cost was",
+        "You have to know the price of options very clear or you don’t know how much more they have changed you",
+        "slow to give it, this application has only made me waste my money"
+      ]
+    },
+    {
+      "title": "Unauthorized Account Deductions",
+      "sentiment": "negative",
+      "keyInsights": [
+        "Customers are experiencing **unexpected withdrawals** from their accounts, indicating a potential issue with transaction processing.",
+        "There is a **lack of communication** regarding these deductions, as customers remain uninformed about the reasons for these transactions.",
+        "Improving **transparency** and providing timely **notifications** about account activities could enhance customer trust and satisfaction."
+      ],
+      "mapped_sentences": [
+        "don’t know why money was taken out of my account twice",
+        "give more money instead of receiving"
+      ]
+    }
+  ]
+}

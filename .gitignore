@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+test_output_*.json
+
+# Models (downloaded during runtime)
+models/
+
+# Logs
+*.log
+
+# Mapped outputs (sensitive data)
+output_mapped*.json
+*_mapped.json
+debug_*.json

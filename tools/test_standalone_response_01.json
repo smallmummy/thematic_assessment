@@ -1,0 +1,181 @@
+{
+  "clusters": [
+    {
+      "title": "Robinhood: Mixed Sentiments on Investment Experience",
+      "sentiment": "positive",
+      "sentences": [
+        "0aea95ef-ecd7-41ae-900b-248b67657d40",
+        "46b53da5-68dc-418a-9928-9efd976c09f2",
+        "4dfc46b7-4e0c-4cee-a0c6-a18102b9f2c8",
+        "783c5a64-9455-4f86-a194-8a2a17e4bd29",
+        "ee068c4f-bca8-459a-bc85-dae26e08459f",
+        "64cf4d28-a985-4d78-b706-5a531aa61be6",
+        "5ae5eebc-ffc1-495c-8ee5-572d46ca647b",
+        "3fa4218b-c62c-4712-bdb6-ce52fb201087",
+        "789ddfdc-668e-4a68-9e93-d17611af616c",
+        "8f6c3a26-a03e-45b0-b9db-0707b169a769",
+        "9c619275-d98e-480b-a848-ca72f37e350f",
+        "e2709d3f-f0ae-462b-b94b-7c2dc8988ff8",
+        "b8158fb1-aa93-4721-9d3d-58e88772808e",
+        "fa5b6c4d-a373-4cc5-9b0d-504849faa481",
+        "6df00d7c-5aee-4e9c-b34d-7edc7a677407",
+        "13c29e31-7461-4b08-900b-56488ce076be",
+        "1fa1fa2f-21c9-42f0-b0da-100342081173",
+        "a3c78498-8e29-4fcb-8055-ac4c4a87d3ef",
+        "51e6b814-c3fa-4ab0-a202-465d7fab355b",
+        "d164d5ea-8cc1-4749-9b09-32db9f735947",
+        "cc014a9c-31ee-43e3-90b8-6ca13b4ae289",
+        "7d4aa701-f1b2-41eb-b42c-c59e8e1d5091",
+        "0844c5ff-f380-4943-8132-08e065b04bd0",
+        "0562b6d0-5136-4c02-9389-46b9a90d6735",
+        "53ea9abf-43be-4526-9556-9790a03bd2c4",
+        "133b6f46-6bf0-4da1-8f7e-d628002f9efd",
+        "1572cc33-2ca0-4f6e-946b-c28bb16ed656",
+        "7b07e8df-ef47-4798-b505-701da35da83b",
+        "ec9319a2-afb8-4825-b4ce-5eb003bb7b11",
+        "6167459e-5376-4953-943f-ab7bb3a3115e",
+        "9e70690f-1e8d-4d7d-8ddf-1bf652d7be66"
+      ],
+      "keyInsights": [
+        "Many users praise Robinhood as the **best investment app**, highlighting its ease of use and user-friendly interface, which makes investing accessible for both new and casual investors.",
+        "Despite positive feedback, there are significant concerns about **security and reliability**, with some users expressing distrust due to perceived shady practices and issues with accessing funds.",
+        "The app's **user experience** is frequently commended for being visually clean and informative, making it a preferred choice among those who value intuitive design in financial apps."
+      ]
+    },
+    {
+      "title": "Account Withdrawal Issues and Restrictions",
+      "sentiment": "negative",
+      "sentences": [
+        "2dea163d-e365-40bd-b779-93b3fff85d79",
+        "66731acb-d252-4dfc-8695-245d21d76680",
+        "69fe36f9-2697-4438-8e46-c36969efa4d7",
+        "b1fe0d83-5b07-4a29-af61-1b7f15aa3c15",
+        "a3c78498-8e29-4fcb-8055-ac4c4a87d3ef",
+        "86d08567-f0fd-4b21-8857-a76ebfe8690b",
+        "4040c334-ac7a-4035-9586-1f71ee6d026e",
+        "746011be-156e-42a0-a1d9-d34bc28f87ff"
+      ],
+      "keyInsights": [
+        "Numerous customers report **difficulty withdrawing** their money, citing account restrictions and app malfunctions as primary causes.",
+        "There is a recurring theme of accounts being **locked** or restricted, often without clear communication or reasons provided to the customer.",
+        "Customers express frustration over the **lengthy review processes** and the demand for additional personal information, which delays access to their funds."
+      ]
+    },
+    {
+      "title": "Customer Frustration Over Money Access",
+      "sentiment": "negative",
+      "sentences": [
+        "ba8cfcdc-2644-44f8-a500-8d2a58517b93",
+        "684f63dc-6b03-4528-be12-5c737992bd29",
+        "7d4aa701-f1b2-41eb-b42c-c59e8e1d5091",
+        "384ceb09-975f-43ad-b0de-b9ef70db14a7",
+        "45dcf689-d6a8-46e3-902e-ffce7f9b67b7"
+      ],
+      "keyInsights": [
+        "Customers are **demanding refunds**, indicating dissatisfaction with the service or product, as seen in multiple requests for money back.",
+        "There is a strong desire for **financial autonomy**, with customers expressing a need to control their funds and make independent decisions.",
+        "The repeated emphasis on **money retrieval** suggests a potential issue with delayed or blocked access to funds, which is causing significant customer dissatisfaction."
+      ]
+    },
+    {
+      "title": "Simplified Investing for Beginners",
+      "sentiment": "positive",
+      "sentences": [
+        "b0d8069a-588f-435c-b16a-ea531030ce15",
+        "06e5e9dc-a1a5-41a0-9afd-a3a96eacd689",
+        "05b11e72-79c7-46fb-b8c0-4a69af95a51f",
+        "9f9f47fd-ee2f-4ef8-b49e-147a0a500bc8",
+        "eb84fdad-b71d-4231-b747-d2999bfa4300"
+      ],
+      "keyInsights": [
+        "The platform has **simplified** investing, making it accessible for those with **zero knowledge**.",
+        "Educational resources like 'Learn to Invest' are crucial in **empowering** users who **don't know** about investing.",
+        "The focus on **easy investing** attracts users who are new to **trading and investing**."
+      ]
+    },
+    {
+      "title": "Customer Concerns on Money Loss",
+      "sentiment": "negative",
+      "sentences": [
+        "bc69d50c-4bdc-4fea-b58b-878c1cb5a2f2",
+        "bc2f4db4-4ae9-426d-aa11-aa3bd05b0e3e",
+        "945295f5-5f8f-434b-8dc4-1e06ea5768bd",
+        "38b90403-049e-4a54-a1df-ea308e503f9a"
+      ],
+      "keyInsights": [
+        "Customers report **significant financial losses** linked to their accounts, indicating a need for improved **account security** and **error prevention**.",
+        "Feedback highlights a **perceived responsibility** of the service provider for financial discrepancies, suggesting a need for better **communication** and **clarity** on account management processes.",
+        "Specific incidents, such as **downtime on leap year**, are mentioned as causes for money loss, pointing to the need for **system reliability** and **contingency planning** during unusual time periods."
+      ]
+    },
+    {
+      "title": "Customer Concerns: Money Access Issues",
+      "sentiment": "negative",
+      "sentences": [
+        "69fe36f9-2697-4438-8e46-c36969efa4d7",
+        "9c578897-37c5-4bea-b68b-8e059619c3d1",
+        "9782e9de-797d-43df-9a54-8f3b538ef596"
+      ],
+      "keyInsights": [
+        "Customers feel their funds are being **withheld** for extended periods, leading to frustration and distrust.",
+        "There is a perception that the company is **unjustly** holding money, with some describing the actions as **criminal**.",
+        "The language used suggests a belief that the company **steals** money, indicating a severe breakdown in trust that needs urgent addressing."
+      ]
+    },
+    {
+      "title": "Trust Issues with Financial Management",
+      "sentiment": "negative",
+      "sentences": [
+        "f1d3df75-d7f9-470d-880a-3ea8ebaa659a",
+        "0844c5ff-f380-4943-8132-08e065b04bd0",
+        "663f4d8e-0b1c-4343-a896-c830bc5ab06f"
+      ],
+      "keyInsights": [
+        "Customers express **distrust** in the company's ability to manage **money** securely, suggesting a need for improved **transparency** and communication.",
+        "Feedback indicates a **pattern** of skepticism regarding the company's **registration process**, highlighting a potential barrier to **customer confidence**.",
+        "The repeated emphasis on **trust** and **money** suggests a critical need for the company to **rebuild** its reputation through **reliable** financial practices and **clear** policies."
+      ]
+    },
+    {
+      "title": "Account Management Issues",
+      "sentiment": "negative",
+      "sentences": [
+        "802c5019-55a9-447c-aa9d-70b5a15c3020",
+        "0bd2dafb-c684-4e99-9384-6490d307b387",
+        "1bf480a1-93d1-4f43-8ff8-33f065922e28"
+      ],
+      "keyInsights": [
+        "Customers find it **difficult** to perform basic actions like depositing money or managing stocks, indicating a need for **simplified** processes.",
+        "The process of **selling shares** and transferring money to accounts is problematic, suggesting improvements in the **transaction workflow** are necessary.",
+        "Instances where shares are sold without customers receiving their **money** highlight a critical issue in the **financial transaction system** that needs urgent attention."
+      ]
+    },
+    {
+      "title": "Issues with Options Pricing Clarity",
+      "sentiment": "negative",
+      "sentences": [
+        "924a24ab-c56c-4c6d-8533-79a5e8a187f3",
+        "ff92900f-64d5-439f-86ba-77d106142458",
+        "36d83254-c0b5-48de-b7b2-93db61a112f0"
+      ],
+      "keyInsights": [
+        "Customers are **confused** about initial costs in multileg options combos, indicating a need for clearer **cost breakdowns**.",
+        "There is a **lack of clarity** on how option prices change, suggesting that more **transparent pricing** information is needed for users.",
+        "The perception that options are **damaged quickly** and money is subtracted too fast highlights a need for improved **transaction transparency**."
+      ]
+    },
+    {
+      "title": "Unauthorized Account Deductions",
+      "sentiment": "negative",
+      "sentences": [
+        "945295f5-5f8f-434b-8dc4-1e06ea5768bd",
+        "0bd2dafb-c684-4e99-9384-6490d307b387"
+      ],
+      "keyInsights": [
+        "Customers are experiencing **unexpected withdrawals** from their accounts, indicating a potential issue with transaction processing.",
+        "There is a **lack of communication** regarding these deductions, as customers remain uninformed about the reasons for these transactions.",
+        "Improving **transparency** and providing timely **notifications** about account activities could enhance customer trust and satisfaction."
+      ]
+    }
+  ]
+}

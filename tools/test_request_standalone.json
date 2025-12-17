@@ -1,0 +1,20 @@
+{
+  "surveyTitle": "Product Feedback Survey - Q4 2024",
+  "theme": "Customer Satisfaction",
+  "baseline": [
+    {"sentence": "The product quality is excellent and outstanding", "id": "r1"},
+    {"sentence": "Very satisfied with the build quality and craftsmanship", "id": "r2"},
+    {"sentence": "Great materials used in construction and manufacturing", "id": "r3"},
+    {"sentence": "Quality exceeds expectations and is superior", "id": "r4"},
+    {"sentence": "Outstanding quality throughout the entire product", "id": "r5"},
+    {"sentence": "Superior build quality and excellent materials", "id": "r6"},
+    {"sentence": "The price is too high for this quality", "id": "r7"},
+    {"sentence": "Not worth the money", "id": "r8"},
+    {"sentence": "Overpriced for what you get", "id": "r9"},
+    {"sentence": "Too expensive compared to competitors", "id": "r10"},
+    {"sentence": "Delivery was very fast", "id": "r11"},
+    {"sentence": "Shipping speed exceeded expectations", "id": "r12"},
+    {"sentence": "Received the package quickly", "id": "r13"},
+    {"sentence": "Quick delivery service", "id": "r14"}
+  ]
+}
