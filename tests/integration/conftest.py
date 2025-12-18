@@ -7,7 +7,7 @@ Models are loaded once per session for performance.
 
 import pytest
 import json
-from unittest.mock import Mock, AsyncMock
+from unittest.mock import Mock, AsyncMock, patch
 
 from src.services.embeddings import EmbeddingService
 from src.services.sentiment import SentimentService
@@ -104,7 +104,6 @@ def insight_service_with_mock(mock_openai_client):
     Insight service with mocked OpenAI client.
     Uses session-scoped mock to avoid API calls.
     """
-    from unittest.mock import patch
 
     mock_async = mock_openai_client
 

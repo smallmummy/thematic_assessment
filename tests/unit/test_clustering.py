@@ -18,13 +18,15 @@ class TestClusteringService:
             min_cluster_size=5,
             min_samples=2,
             cluster_selection_epsilon=0.1,
-            metric='cosine'
+            metric='cosine',
+            similarity_threshold=0.5
         )
 
         assert service.min_cluster_size == 5
         assert service.min_samples == 2
         assert service.cluster_selection_epsilon == 0.1
         assert service.metric == 'cosine'
+        assert service.similarity_threshold == 0.5
 
     def test_initialization_defaults(self):
         """Test service initialization with defaults."""
@@ -34,10 +36,11 @@ class TestClusteringService:
         assert service.min_samples == 1
         assert service.cluster_selection_epsilon == 0.0
         assert service.metric == 'euclidean'
+        assert service.similarity_threshold == 0.3
 
     @patch('src.services.clustering.hdbscan.HDBSCAN')
     def test_cluster_embeddings_success(self, mock_hdbscan):
-        """Test successful clustering."""
+        """Test successful clustering with soft assignment."""
         # Setup mock
         mock_clusterer = Mock()
         mock_clusterer.fit_predict.return_value = np.array([0, 0, 1, 1, -1])
@@ -60,7 +63,17 @@ class TestClusteringService:
 
         # Verify fit_predict was called
         mock_clusterer.fit_predict.assert_called_once()
-        np.testing.assert_array_equal(labels, np.array([0, 0, 1, 1, -1]))
+
+        # After soft assignment, the noise point (index 4) may be assigned to a cluster
+        # Check that we have valid labels (either -1 or non-negative integers)
+        assert all(label >= -1 for label in labels)
+        # First 4 points should maintain their cluster assignments
+        assert labels[0] == 0
+        assert labels[1] == 0
+        assert labels[2] == 1
+        assert labels[3] == 1
+        # Point 4 may be assigned to cluster 0, 1, or remain noise (-1)
+        assert labels[4] in [-1, 0, 1]
 
     def test_cluster_embeddings_empty_array(self):
         """Test that empty array raises ValueError."""
@@ -83,7 +96,53 @@ class TestClusteringService:
 
         labels = service.cluster_embeddings(embeddings)
 
+        # When all points are noise, soft assignment can't help (no clusters exist)
         assert all(label == -1 for label in labels)
+
+    def test_soft_assignment_with_threshold(self):
+        """Test soft assignment respects similarity threshold."""
+        service = ClusteringService(similarity_threshold=0.8)
+
+        # Create clearly separated clusters
+        embeddings = np.array([
+            [1.0, 0.0, 0.0],  # Cluster 0
+            [0.9, 0.1, 0.0],  # Cluster 0
+            [0.0, 0.0, 1.0],  # Cluster 1
+            [0.0, 0.1, 0.9],  # Cluster 1
+            [0.5, 0.5, 0.5],  # Noise - far from both clusters
+        ])
+
+        # Simulate hard clustering output
+        hard_labels = np.array([0, 0, 1, 1, -1])
+
+        # Apply soft assignment
+        soft_labels = service._soft_assign_noise_points(embeddings, hard_labels.copy())
+
+        # With high threshold (0.8), the noise point should remain noise
+        # because it's equidistant from both clusters
+        assert soft_labels[4] == -1
+
+    def test_soft_assignment_assigns_close_points(self):
+        """Test soft assignment assigns noise points close to clusters."""
+        service = ClusteringService(similarity_threshold=0.3)
+
+        # Create clusters with a noise point close to cluster 0
+        embeddings = np.array([
+            [1.0, 0.0],  # Cluster 0
+            [0.95, 0.05],  # Cluster 0
+            [0.0, 1.0],  # Cluster 1
+            [0.05, 0.95],  # Cluster 1
+            [0.85, 0.15],  # Noise - close to cluster 0
+        ])
+
+        # Simulate hard clustering output
+        hard_labels = np.array([0, 0, 1, 1, -1])
+
+        # Apply soft assignment
+        soft_labels = service._soft_assign_noise_points(embeddings, hard_labels.copy())
+
+        # The noise point should be assigned to cluster 0 (it's closer)
+        assert soft_labels[4] == 0
 
     def test_organize_clusters_success(self):
         """Test successful cluster organization."""

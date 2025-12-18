@@ -1,0 +1,961 @@
+{
+  "clusters": [
+    {
+      "title": "Mixed Reviews on Food and Drink Quality",
+      "sentiment": "positive",
+      "sentences": [
+        "5c89c43f-e5cd-4628-80f0-021fb58d44e7",
+        "d028e608-d9e5-4161-8365-46ca9dd6641a",
+        "1c287025-b84c-401a-92b5-d3bedd552c42",
+        "957eaa41-c603-4a6b-ba85-e91a9dd3d1cf",
+        "44e57659-2f33-45f3-803e-8ec75ff746f7",
+        "e7f26450-f8d0-447f-abfa-4cd6b5721c70",
+        "3b8052ae-3885-44cd-8306-c2e558ed9682",
+        "6bed7a89-bfd2-41db-a390-e3fa97a1f3a3",
+        "52984fb7-6636-4c38-a8a5-c82f3b16a220",
+        "8d02e7e4-b07e-4669-bec0-9b7be101c769",
+        "0f48c1ab-afe8-4c13-b853-808ac1b1a2cc",
+        "c8429883-e6a7-4774-ae30-a33e93916d57",
+        "0df19e84-28a0-492e-b629-65f24d1c7d42",
+        "84fb06da-d3dd-488f-9236-4c713c9cc27f",
+        "6553ddc0-34af-4655-b9a8-a9a79b3d149b",
+        "98fc5815-5ed8-49ab-8115-f9332172f911",
+        "9931e0ef-15a0-46d4-b143-deb99bdf1088",
+        "b1509e01-0e16-48f7-9de1-0a0f9ef74a90",
+        "267fb62c-1742-4b3f-825b-485474faaf79",
+        "95e9197f-fccf-4880-ba2a-b53a9f50113d",
+        "b9bd7798-2b51-4ef7-9992-73912f76df61",
+        "72e38730-4f1e-4026-bf4c-6c7383f5f8a2",
+        "8075c7d2-04bd-4ce9-9dd5-f3486a4475f3",
+        "40588a08-3b3b-48a5-a070-13cee92ed577",
+        "805316ae-2ae8-469a-91c2-8914c962e7b6",
+        "f762e355-32be-45fb-9c96-d5639b7ccdce",
+        "9d7000fb-d26a-437d-9b95-375e57f7b6a9",
+        "e637b587-5831-4eef-80ef-61b7cdf4b9ac",
+        "5d658108-1ee3-41b8-8409-6f6aa97f99f5",
+        "2f69896e-e081-48a1-b730-67c067e09183",
+        "fbee9bb6-5f4d-4a68-8abe-e0d57e87f2b2",
+        "f38b6013-2d9f-459e-8179-7bb9b7150c82",
+        "03fd01d3-dd2e-4a9c-bee5-3fe7047695cf",
+        "a2284019-cb28-422e-8d54-fa47ceb569cc",
+        "79fce5d2-6c5c-4e44-9a90-ff90e66c95d0",
+        "c2d38e17-8fe3-494a-b8f4-92bd692bd75b",
+        "f0b738a3-94d7-411b-9590-5bfae3fb1a6b",
+        "b6ff7cc5-fbe0-4b99-ba71-914668ffeb62",
+        "40479cb0-7280-4b02-8562-903be6802e84",
+        "d0d8db70-7ed8-4ac9-b284-e47c98c0f70c",
+        "fcfb3af7-5315-44fc-8ed2-f9aa4689404c",
+        "7eebdc30-cee1-475c-b91f-63768c3593bd",
+        "475647f8-c232-40c7-93bf-9889fe9a41ff",
+        "b7881b01-a7ee-499b-844c-b764f0209845",
+        "55513362-2a80-4d9a-b527-ca8090ac5f68",
+        "5a0e93ad-d38f-4ecd-9c76-bee7acc248b5",
+        "4f3d3809-76da-4045-8225-bb5804430cca",
+        "89614c48-447b-41c0-9896-4dbe8a7ab916",
+        "87260664-f208-406d-b1f4-0c47df10fe19",
+        "2bde5563-72b8-476b-afd8-797c2883fcbc",
+        "186887d7-2cc0-4158-a96d-ebccfff4c436"
+      ],
+      "keyInsights": [
+        "While some customers found the **food and drinks** to be good, others described the food as **substandard** or even **inedible**.",
+        "A lack of **consistency** in food quality is evident, with some customers enjoying their meals while others experienced **mediocre** or **poor** offerings.",
+        "Improving the **variety** and **quality** of food options could enhance the overall customer experience, as several comments highlighted a lack of choice and dissatisfaction with the meals served."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "5c89c43f-e5cd-4628-80f0-021fb58d44e7",
+          "sentence": "Food was substandard, yes, its breakfast"
+        },
+        {
+          "id": "d028e608-d9e5-4161-8365-46ca9dd6641a",
+          "sentence": "Food could have been a little better"
+        },
+        {
+          "id": "1c287025-b84c-401a-92b5-d3bedd552c42",
+          "sentence": "My wife and I felt nauseated after eating the food"
+        },
+        {
+          "id": "957eaa41-c603-4a6b-ba85-e91a9dd3d1cf",
+          "sentence": "Service not as good on way back as my son and I were forgotten when the food was distributed"
+        },
+        {
+          "id": "44e57659-2f33-45f3-803e-8ec75ff746f7",
+          "sentence": "Food ok albeit no choice by time we were served"
+        },
+        {
+          "id": "e7f26450-f8d0-447f-abfa-4cd6b5721c70",
+          "sentence": "The food is mediocre and I discovered that the pasta entree that I had - very strange, was also being served in coach"
+        },
+        {
+          "id": "3b8052ae-3885-44cd-8306-c2e558ed9682",
+          "sentence": "The dinner served was inedible and the snack for breakfast an insult - a dry, hard Magdalena cookie"
+        },
+        {
+          "id": "6bed7a89-bfd2-41db-a390-e3fa97a1f3a3",
+          "sentence": "The food was"
+        },
+        {
+          "id": "52984fb7-6636-4c38-a8a5-c82f3b16a220",
+          "sentence": "The same with food"
+        },
+        {
+          "id": "8d02e7e4-b07e-4669-bec0-9b7be101c769",
+          "sentence": "The food"
+        },
+        {
+          "id": "0f48c1ab-afe8-4c13-b853-808ac1b1a2cc",
+          "sentence": "The food is okay"
+        },
+        {
+          "id": "c8429883-e6a7-4774-ae30-a33e93916d57",
+          "sentence": "We got food twice going and twice coming home"
+        },
+        {
+          "id": "0df19e84-28a0-492e-b629-65f24d1c7d42",
+          "sentence": "Food could have been better though"
+        },
+        {
+          "id": "84fb06da-d3dd-488f-9236-4c713c9cc27f",
+          "sentence": "Snack was a sandwich"
+        },
+        {
+          "id": "6553ddc0-34af-4655-b9a8-a9a79b3d149b",
+          "sentence": "The drinks standard"
+        },
+        {
+          "id": "98fc5815-5ed8-49ab-8115-f9332172f911",
+          "sentence": "Food and drinks were good (warmed mixed nuts, then roll and salad, short ribs"
+        },
+        {
+          "id": "9931e0ef-15a0-46d4-b143-deb99bdf1088",
+          "sentence": "Food was terrible"
+        },
+        {
+          "id": "b1509e01-0e16-48f7-9de1-0a0f9ef74a90",
+          "sentence": "Food and drink was good"
+        },
+        {
+          "id": "267fb62c-1742-4b3f-825b-485474faaf79",
+          "sentence": "There was food and drink available"
+        },
+        {
+          "id": "95e9197f-fccf-4880-ba2a-b53a9f50113d",
+          "sentence": "The food was delicious"
+        },
+        {
+          "id": "b9bd7798-2b51-4ef7-9992-73912f76df61",
+          "sentence": "The food was terrific"
+        },
+        {
+          "id": "72e38730-4f1e-4026-bf4c-6c7383f5f8a2",
+          "sentence": "The meals and snacks were really delicious and filling"
+        },
+        {
+          "id": "8075c7d2-04bd-4ce9-9dd5-f3486a4475f3",
+          "sentence": "The food out was passable"
+        },
+        {
+          "id": "40588a08-3b3b-48a5-a070-13cee92ed577",
+          "sentence": "lunch and snacks were served together and not at separate times"
+        },
+        {
+          "id": "805316ae-2ae8-469a-91c2-8914c962e7b6",
+          "sentence": "I was served 1st at meal time and given special snacks and desserts"
+        },
+        {
+          "id": "f762e355-32be-45fb-9c96-d5639b7ccdce",
+          "sentence": "The food and snacks were passable and offered regularly"
+        },
+        {
+          "id": "9d7000fb-d26a-437d-9b95-375e57f7b6a9",
+          "sentence": "passing them over for the snacks was a bummer"
+        },
+        {
+          "id": "e637b587-5831-4eef-80ef-61b7cdf4b9ac",
+          "sentence": "It was pretty much on time and the food was pretty decent"
+        },
+        {
+          "id": "5d658108-1ee3-41b8-8409-6f6aa97f99f5",
+          "sentence": "Economy was served drink and snacks"
+        },
+        {
+          "id": "2f69896e-e081-48a1-b730-67c067e09183",
+          "sentence": "She wrote me back a long, encouraging note (I still have it filed away) and brought me an extra snack"
+        },
+        {
+          "id": "fbee9bb6-5f4d-4a68-8abe-e0d57e87f2b2",
+          "sentence": "Economy was served beverages and a snack"
+        },
+        {
+          "id": "f38b6013-2d9f-459e-8179-7bb9b7150c82",
+          "sentence": "The food was okay on the way out (the ginger ice cream was excellent"
+        },
+        {
+          "id": "03fd01d3-dd2e-4a9c-bee5-3fe7047695cf",
+          "sentence": "Food was passable and the seats"
+        },
+        {
+          "id": "a2284019-cb28-422e-8d54-fa47ceb569cc",
+          "sentence": "Food served on tablecloths with silverware, china and glassware that was really quite tasty"
+        },
+        {
+          "id": "79fce5d2-6c5c-4e44-9a90-ff90e66c95d0",
+          "sentence": "The food was good"
+        },
+        {
+          "id": "c2d38e17-8fe3-494a-b8f4-92bd692bd75b",
+          "sentence": "the food served was good"
+        },
+        {
+          "id": "f0b738a3-94d7-411b-9590-5bfae3fb1a6b",
+          "sentence": "The food was good and plentiful"
+        },
+        {
+          "id": "b6ff7cc5-fbe0-4b99-ba71-914668ffeb62",
+          "sentence": "Even the food was good"
+        },
+        {
+          "id": "40479cb0-7280-4b02-8562-903be6802e84",
+          "sentence": "Food is also good"
+        },
+        {
+          "id": "d0d8db70-7ed8-4ac9-b284-e47c98c0f70c",
+          "sentence": "Meals were great on the way to Narita"
+        },
+        {
+          "id": "fcfb3af7-5315-44fc-8ed2-f9aa4689404c",
+          "sentence": "The food service and the meals were good"
+        },
+        {
+          "id": "7eebdc30-cee1-475c-b91f-63768c3593bd",
+          "sentence": "Food was good and somewhat healthy depending on your choices"
+        },
+        {
+          "id": "475647f8-c232-40c7-93bf-9889fe9a41ff",
+          "sentence": "Enough food was served on a good schedule"
+        },
+        {
+          "id": "b7881b01-a7ee-499b-844c-b764f0209845",
+          "sentence": "The service was good and the meals were okay"
+        },
+        {
+          "id": "55513362-2a80-4d9a-b527-ca8090ac5f68",
+          "sentence": "Good meals served with great service"
+        },
+        {
+          "id": "5a0e93ad-d38f-4ecd-9c76-bee7acc248b5",
+          "sentence": "Great service, starting from the counter, door service, good food"
+        },
+        {
+          "id": "4f3d3809-76da-4045-8225-bb5804430cca",
+          "sentence": "On time, good service and some of the best food in Economy that I have ever had"
+        },
+        {
+          "id": "89614c48-447b-41c0-9896-4dbe8a7ab916",
+          "sentence": "Food was ok"
+        },
+        {
+          "id": "87260664-f208-406d-b1f4-0c47df10fe19",
+          "sentence": "Though the food was just average, the entire experience was satisfactory"
+        },
+        {
+          "id": "2bde5563-72b8-476b-afd8-797c2883fcbc",
+          "sentence": "Excellent food and wine and they accommodated my spouse gluten free requests"
+        },
+        {
+          "id": "186887d7-2cc0-4158-a96d-ebccfff4c436",
+          "sentence": "Food was edible and it is nice to be able to have beer and wine @ no extra charge"
+        }
+      ]
+    },
+    {
+      "title": "Critical Issues with Food Quality and Variety",
+      "sentiment": "negative",
+      "sentences": [
+        "afba81d7-aff9-4fc5-8221-4cd75fb3d296",
+        "dfa55b3f-3a75-4927-bca1-ae16bcdfaa1b",
+        "9931e0ef-15a0-46d4-b143-deb99bdf1088",
+        "d84ffcc8-98f5-467c-b105-baba33da06e8",
+        "6ecd5f54-290e-4a00-b5bc-393530c9451d",
+        "ccb15046-fcdc-4f94-8d53-8da0e909e21f",
+        "465c2ce9-c6f5-4193-9935-e29086583b21",
+        "269cc8f2-4187-4ec1-a014-7a582950e83a",
+        "92499399-67bd-4d56-afae-74a42019c0bb",
+        "97e62180-0ce4-477a-b89b-d79c8b699811",
+        "13b001bb-66aa-4ac3-b0fd-032c74bb3753",
+        "0f0ee343-d563-4613-95c8-29ddd2036956",
+        "0d8365fe-97fe-4c4a-9275-7ace0ad01c2a",
+        "8dfd7e33-031a-4bd9-babe-5028689b3f85",
+        "83d53dd3-44ad-4448-a28c-af4d6f9bffb2",
+        "311c27e5-cbf5-4b05-b3ef-1845f6c2efaf",
+        "9d7000fb-d26a-437d-9b95-375e57f7b6a9",
+        "87de46ef-ba44-4535-8c17-95baf5731a3d",
+        "d72f1aaa-24e1-41a4-a23e-11ff940dc80e",
+        "2646e78a-9d8e-47be-802f-bb054970c681",
+        "b2ebb1ed-c24c-4b6c-bf78-cc783eae7079",
+        "c8012fa0-0238-4eab-85c4-7a2b950e6795",
+        "63c13b9a-a90a-489e-8811-3243bdb21866",
+        "9204ac02-ff1c-4afd-a1e3-bf781ee4712e",
+        "a918ec76-64ea-4111-a963-5f6312e95ad0",
+        "e2b9ce97-b006-4311-a462-d546373b23ca",
+        "3eec0d83-836b-46d7-8787-82fac64ab89a",
+        "9538f5be-826d-4c6f-aabe-2de6fadafd69",
+        "42170482-c872-4679-8d01-b6fc9926d985",
+        "8a102d44-381e-4a31-bfe9-0045c68b902a",
+        "e664b1a3-f59a-4594-bef8-6253f242e3da"
+      ],
+      "keyInsights": [
+        "The majority of feedback highlights **poor food quality**, with terms like 'horrible', 'terrible', and 'not good' frequently used, indicating a need for significant **improvement** in taste and preparation.",
+        "Several comments mention the **lack of variety** and issues with food being overly **spicy**, suggesting a need to diversify the menu to cater to different **taste preferences**.",
+        "Feedback indicates dissatisfaction with **meal presentation** and **visual appeal**, suggesting that enhancing the **aesthetic** aspects of meals could improve overall customer satisfaction."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "afba81d7-aff9-4fc5-8221-4cd75fb3d296",
+          "sentence": "sadly, the food was not good"
+        },
+        {
+          "id": "dfa55b3f-3a75-4927-bca1-ae16bcdfaa1b",
+          "sentence": "Not to mention horrendous food"
+        },
+        {
+          "id": "9931e0ef-15a0-46d4-b143-deb99bdf1088",
+          "sentence": "Food was terrible"
+        },
+        {
+          "id": "d84ffcc8-98f5-467c-b105-baba33da06e8",
+          "sentence": "Food was horrible and unimaginative"
+        },
+        {
+          "id": "6ecd5f54-290e-4a00-b5bc-393530c9451d",
+          "sentence": "The food was terrible as well"
+        },
+        {
+          "id": "ccb15046-fcdc-4f94-8d53-8da0e909e21f",
+          "sentence": "The food isn't the best"
+        },
+        {
+          "id": "465c2ce9-c6f5-4193-9935-e29086583b21",
+          "sentence": "Food is horrible"
+        },
+        {
+          "id": "269cc8f2-4187-4ec1-a014-7a582950e83a",
+          "sentence": "Food was so bad like never seen before"
+        },
+        {
+          "id": "92499399-67bd-4d56-afae-74a42019c0bb",
+          "sentence": "We did not try any of the food on board"
+        },
+        {
+          "id": "97e62180-0ce4-477a-b89b-d79c8b699811",
+          "sentence": "I didn't get the food that I wanted"
+        },
+        {
+          "id": "13b001bb-66aa-4ac3-b0fd-032c74bb3753",
+          "sentence": "It's really not necessary for the food to be that bad"
+        },
+        {
+          "id": "0f0ee343-d563-4613-95c8-29ddd2036956",
+          "sentence": "The food selections not so good"
+        },
+        {
+          "id": "0d8365fe-97fe-4c4a-9275-7ace0ad01c2a",
+          "sentence": "In addition, the food was horrible- EVERYTHING was spicy"
+        },
+        {
+          "id": "8dfd7e33-031a-4bd9-babe-5028689b3f85",
+          "sentence": "Food was below expectations"
+        },
+        {
+          "id": "83d53dd3-44ad-4448-a28c-af4d6f9bffb2",
+          "sentence": "the food offering was terrible"
+        },
+        {
+          "id": "311c27e5-cbf5-4b05-b3ef-1845f6c2efaf",
+          "sentence": "I didn't eat the food"
+        },
+        {
+          "id": "9d7000fb-d26a-437d-9b95-375e57f7b6a9",
+          "sentence": "passing them over for the snacks was a bummer"
+        },
+        {
+          "id": "87de46ef-ba44-4535-8c17-95baf5731a3d",
+          "sentence": "Food was not good – both dinner and breakfast"
+        },
+        {
+          "id": "d72f1aaa-24e1-41a4-a23e-11ff940dc80e",
+          "sentence": "Food was not tasty or visually appealing"
+        },
+        {
+          "id": "2646e78a-9d8e-47be-802f-bb054970c681",
+          "sentence": "the food was not so good"
+        },
+        {
+          "id": "b2ebb1ed-c24c-4b6c-bf78-cc783eae7079",
+          "sentence": "The food was not great"
+        },
+        {
+          "id": "c8012fa0-0238-4eab-85c4-7a2b950e6795",
+          "sentence": "Finger food, crowded, we didn't get much value out of that"
+        },
+        {
+          "id": "63c13b9a-a90a-489e-8811-3243bdb21866",
+          "sentence": "Had to buy food which was awful"
+        },
+        {
+          "id": "9204ac02-ff1c-4afd-a1e3-bf781ee4712e",
+          "sentence": "This meant no chance to buy food again"
+        },
+        {
+          "id": "a918ec76-64ea-4111-a963-5f6312e95ad0",
+          "sentence": "No attempt was made to provide proper food and the drink selection was poor"
+        },
+        {
+          "id": "e2b9ce97-b006-4311-a462-d546373b23ca",
+          "sentence": "We weren’t expecting food"
+        },
+        {
+          "id": "3eec0d83-836b-46d7-8787-82fac64ab89a",
+          "sentence": "The downside was a snack breakfast"
+        },
+        {
+          "id": "9538f5be-826d-4c6f-aabe-2de6fadafd69",
+          "sentence": "Even the food was tolerable"
+        },
+        {
+          "id": "42170482-c872-4679-8d01-b6fc9926d985",
+          "sentence": "Meals were decent if unremarkable"
+        },
+        {
+          "id": "8a102d44-381e-4a31-bfe9-0045c68b902a",
+          "sentence": "The food going to Madrid was good coming back was horrible"
+        },
+        {
+          "id": "e664b1a3-f59a-4594-bef8-6253f242e3da",
+          "sentence": "Food is uneatable"
+        }
+      ]
+    },
+    {
+      "title": "Mixed Reviews on Airline Food Quality",
+      "sentiment": "positive",
+      "sentences": [
+        "5ffd8463-4cef-4363-9a36-359133596ea3",
+        "490dcb41-0bbf-4551-8925-46cfb38452c2",
+        "1c287025-b84c-401a-92b5-d3bedd552c42",
+        "0cc8b212-8137-4982-844b-b5252ab3c45b",
+        "a192ffe9-156f-4ece-b89f-50f144b643bf",
+        "0dc4d550-f7da-4d49-8bc5-e6b82c974c89",
+        "b9985505-17fe-4d70-9860-4d51d472d2b2",
+        "7333b0b3-4432-4e96-84cf-0b9995657bdc",
+        "7d38a067-0cc7-4906-b3c3-b20ac2e04591",
+        "4eeb1af3-5f76-4117-84f8-06a8772a5ec2",
+        "da7f10da-68b4-48ef-a0f2-9b18472f7539",
+        "19894292-0bab-43a6-8a66-6880fb34dd85",
+        "d92a8d05-6dc5-4bb1-9096-284400025690",
+        "4d8cc09d-42db-4b4a-99e9-4a7a8eaef846",
+        "df3d917f-6dfc-49ce-8e99-dd70526ab424",
+        "65e21985-e169-4ff5-b7c2-fc005ca9f6bc",
+        "34bf1a2d-717f-4481-9aff-7261789a11b8",
+        "77c69ab6-28ef-4d98-8e61-fccdc6c47b4b",
+        "82fe4b2e-32f0-494d-b9df-57f6708895fe",
+        "3ac059e2-a9a5-4420-935d-0947346a78ac",
+        "79124064-27c2-4d4a-8dcb-1e4169ae2914",
+        "997ad75d-db40-4c77-8fc5-9f4e6ed0302f",
+        "28c1abd5-61b4-4716-8405-42e1c000991d",
+        "3e0ba29c-2776-42b2-9549-302e1ca11331",
+        "fd70543d-11cd-4951-b781-a034a6b44c5a"
+      ],
+      "keyInsights": [
+        "While some customers found the **food excellent**, others described it as the **worst** they've ever had, indicating a significant **variation in quality**.",
+        "Positive feedback highlights that food quality is **good for airline standards**, suggesting that setting realistic **expectations** could improve customer satisfaction.",
+        "The **business class** experience was notably better, with several mentions of **great service and food**, pointing to a potential area for improving economy class offerings."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "5ffd8463-4cef-4363-9a36-359133596ea3",
+          "sentence": "I always bring my own food so am not subject to whatever mediocre meals might be served"
+        },
+        {
+          "id": "490dcb41-0bbf-4551-8925-46cfb38452c2",
+          "sentence": "the food was really not worth eating: if you travel with them, bring your own food"
+        },
+        {
+          "id": "1c287025-b84c-401a-92b5-d3bedd552c42",
+          "sentence": "My wife and I felt nauseated after eating the food"
+        },
+        {
+          "id": "0cc8b212-8137-4982-844b-b5252ab3c45b",
+          "sentence": "The food in business/first class was minimal, just a basket offered round with a few snacks in it"
+        },
+        {
+          "id": "a192ffe9-156f-4ece-b89f-50f144b643bf",
+          "sentence": "Excellent food / comfort while on board"
+        },
+        {
+          "id": "0dc4d550-f7da-4d49-8bc5-e6b82c974c89",
+          "sentence": "Even the food was good (for airline food"
+        },
+        {
+          "id": "b9985505-17fe-4d70-9860-4d51d472d2b2",
+          "sentence": "In contrast the International leg between LAX & Melbourne the food was excellent"
+        },
+        {
+          "id": "7333b0b3-4432-4e96-84cf-0b9995657bdc",
+          "sentence": "The service on board was quite good and the food was enjoyable and high quality for airline food"
+        },
+        {
+          "id": "7d38a067-0cc7-4906-b3c3-b20ac2e04591",
+          "sentence": "quality of food provided on board is good"
+        },
+        {
+          "id": "4eeb1af3-5f76-4117-84f8-06a8772a5ec2",
+          "sentence": "The food was excellent on both flights"
+        },
+        {
+          "id": "da7f10da-68b4-48ef-a0f2-9b18472f7539",
+          "sentence": "Flight was on time and the food offered with choices was good for airline food"
+        },
+        {
+          "id": "19894292-0bab-43a6-8a66-6880fb34dd85",
+          "sentence": "Food is pretty good considering its an airline food, airplane was in good condition Overall very good experience and flight arrived ahead of schedule"
+        },
+        {
+          "id": "d92a8d05-6dc5-4bb1-9096-284400025690",
+          "sentence": "The food was excellent for an airline"
+        },
+        {
+          "id": "4d8cc09d-42db-4b4a-99e9-4a7a8eaef846",
+          "sentence": "As a detail: bring your own food, imposible to eat, I’m frequent flyer, bring some stuff to have your own tasty bite"
+        },
+        {
+          "id": "df3d917f-6dfc-49ce-8e99-dd70526ab424",
+          "sentence": "Food is Very good for Airline from The U.S. This is the best way to cross the Pacific"
+        },
+        {
+          "id": "65e21985-e169-4ff5-b7c2-fc005ca9f6bc",
+          "sentence": "The in flight food was not very good"
+        },
+        {
+          "id": "34bf1a2d-717f-4481-9aff-7261789a11b8",
+          "sentence": "The food was the worst food I have ever had on any airline that I have travelled in"
+        },
+        {
+          "id": "77c69ab6-28ef-4d98-8e61-fccdc6c47b4b",
+          "sentence": "The airline food was below average, my fiance couldn't even eat hers"
+        },
+        {
+          "id": "82fe4b2e-32f0-494d-b9df-57f6708895fe",
+          "sentence": "Airline food is never great"
+        },
+        {
+          "id": "3ac059e2-a9a5-4420-935d-0947346a78ac",
+          "sentence": "The food was the worst I've seen on any airline"
+        },
+        {
+          "id": "79124064-27c2-4d4a-8dcb-1e4169ae2914",
+          "sentence": "At the end of the flight the food was so bad that I actually needed the airsick bag for the first time in my life"
+        },
+        {
+          "id": "997ad75d-db40-4c77-8fc5-9f4e6ed0302f",
+          "sentence": "Later in the flight she also gave multiple snacks and was super attentive"
+        },
+        {
+          "id": "28c1abd5-61b4-4716-8405-42e1c000991d",
+          "sentence": "Flight attendants were attentive, offered beverages, served hot cookies, didn't disturb me after I laid back and went to sleep"
+        },
+        {
+          "id": "3e0ba29c-2776-42b2-9549-302e1ca11331",
+          "sentence": "Flying from Greenville South Carolina to Chicago 5 hour delay United treating us right they kept us updated provided us with snacks and drinks"
+        },
+        {
+          "id": "fd70543d-11cd-4951-b781-a034a6b44c5a",
+          "sentence": "Food is awfulFor long duration, some service of hard liquor should also be there (I mean complimentary"
+        }
+      ]
+    },
+    {
+      "title": "Customer Feedback on Food and Snack Offerings",
+      "sentiment": "positive",
+      "sentences": [
+        "2db4ee14-0812-494b-b64e-2fd24599fff0",
+        "bb4f1ae6-fd63-451c-acda-773638911382",
+        "554dd06c-8197-4d00-bb00-984e97799580",
+        "1155653b-9086-4c4a-bec1-a3e1101876ab",
+        "aa05d821-a4e2-4f82-90d0-f7b519270b9b",
+        "171adbce-11a0-4258-9951-d080c0189b17",
+        "843ca50d-c500-4a5c-9491-57a3bd2349d2",
+        "4d8cc09d-42db-4b4a-99e9-4a7a8eaef846",
+        "40588a08-3b3b-48a5-a070-13cee92ed577",
+        "ee409527-4a8a-4193-96db-dd54e165d807",
+        "002fd939-8196-4889-b8b9-1a30be5612a0",
+        "003b9705-2521-4d1a-9936-bc25f1f41306",
+        "002ab392-78fa-4a81-841e-854e526ab34c",
+        "21920691-b777-425d-87c6-771bd34900c6",
+        "b06ce24b-6941-4b98-b9ad-5b0ac39a183d",
+        "41c04d4f-b9ef-42c3-a676-9714605d8feb",
+        "920e453e-6121-448b-b1ba-cb7f21fde5e9",
+        "094d5f80-657d-49a0-ae4a-bdf56796668a",
+        "25412767-5b32-46d2-8c4d-7eaeee4c8947"
+      ],
+      "keyInsights": [
+        "There is a **positive sentiment** towards the availability of **meals and snacks**, with customers appreciating the **variety** offered.",
+        "Several customers noted the **efficiency** in snack service, but there is a **demand for more variety** beyond just pretzels.",
+        "While some customers bring their own food due to **limited options**, others appreciate the **continuous offering** of drinks and snacks, indicating a need for consistent service across flights."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "2db4ee14-0812-494b-b64e-2fd24599fff0",
+          "sentence": "First no food, now no distraction"
+        },
+        {
+          "id": "bb4f1ae6-fd63-451c-acda-773638911382",
+          "sentence": "a few meals, and snacks"
+        },
+        {
+          "id": "554dd06c-8197-4d00-bb00-984e97799580",
+          "sentence": "Limited snacks"
+        },
+        {
+          "id": "1155653b-9086-4c4a-bec1-a3e1101876ab",
+          "sentence": "nothing special - food okay"
+        },
+        {
+          "id": "aa05d821-a4e2-4f82-90d0-f7b519270b9b",
+          "sentence": "brought more snacks when we asked"
+        },
+        {
+          "id": "171adbce-11a0-4258-9951-d080c0189b17",
+          "sentence": "The food selections are an added plus"
+        },
+        {
+          "id": "843ca50d-c500-4a5c-9491-57a3bd2349d2",
+          "sentence": "They serve two meals in total with snacks in between"
+        },
+        {
+          "id": "4d8cc09d-42db-4b4a-99e9-4a7a8eaef846",
+          "sentence": "As a detail: bring your own food, imposible to eat, I’m frequent flyer, bring some stuff to have your own tasty bite"
+        },
+        {
+          "id": "40588a08-3b3b-48a5-a070-13cee92ed577",
+          "sentence": "lunch and snacks were served together and not at separate times"
+        },
+        {
+          "id": "ee409527-4a8a-4193-96db-dd54e165d807",
+          "sentence": "No snacks available in the galley"
+        },
+        {
+          "id": "002fd939-8196-4889-b8b9-1a30be5612a0",
+          "sentence": "When the meals or drinks came, they skipped in every row minimum one person sometimes two"
+        },
+        {
+          "id": "003b9705-2521-4d1a-9936-bc25f1f41306",
+          "sentence": "enough drinks and some other snacks"
+        },
+        {
+          "id": "002ab392-78fa-4a81-841e-854e526ab34c",
+          "sentence": "they need to offer a variety of snacks instead of just pretzels"
+        },
+        {
+          "id": "21920691-b777-425d-87c6-771bd34900c6",
+          "sentence": "we always bring snacks with us"
+        },
+        {
+          "id": "b06ce24b-6941-4b98-b9ad-5b0ac39a183d",
+          "sentence": "Kept offering us water, snacks and food available"
+        },
+        {
+          "id": "41c04d4f-b9ef-42c3-a676-9714605d8feb",
+          "sentence": "Food pretty good, beverages very good"
+        },
+        {
+          "id": "920e453e-6121-448b-b1ba-cb7f21fde5e9",
+          "sentence": "The snacks were served efficiently"
+        },
+        {
+          "id": "094d5f80-657d-49a0-ae4a-bdf56796668a",
+          "sentence": "this lady asked me what I wanted and told me I could have that and a beverage"
+        },
+        {
+          "id": "25412767-5b32-46d2-8c4d-7eaeee4c8947",
+          "sentence": "you get a snack, a warm lunch and before landing again a great snack"
+        }
+      ]
+    },
+    {
+      "title": "Inadequate Food and Voucher Service",
+      "sentiment": "negative",
+      "sentences": [
+        "a34809d8-59c5-4027-95de-52924244bb3d",
+        "d5433867-8a38-438d-b6c2-a73fd98ab0ab",
+        "e2f8c873-e764-4c09-98fa-75bbf46e5077",
+        "369b6ce0-ab49-4ee7-a69f-da40dcc1c1c8",
+        "022cd15a-a888-4bab-8fb4-40744c25f090",
+        "80c41f06-a813-490c-ba77-fdb355fea845",
+        "2be29b77-4c3d-45a2-ad86-b7d55ec50b63",
+        "0b261b9f-7d81-43ad-854a-adc3b7165aee",
+        "507c619f-9f40-4212-b8da-10e1733f38af",
+        "cfad36a6-167d-4a09-9232-2d567dc8bb8f",
+        "af01726e-868a-49f1-8195-865404501948",
+        "a99f2408-0ad8-4fc1-aa00-035cd51c5c92"
+      ],
+      "keyInsights": [
+        "Customers frequently report **lack of complimentary snacks** and meals, indicating a need for better **provision of basic in-flight amenities**.",
+        "There is a significant dissatisfaction with the **insufficient distribution of meal vouchers**, as many customers were either not offered any or received them after long delays.",
+        "The **delay and scarcity** in providing **hotel and meal vouchers** during disruptions is a recurring issue, suggesting a need for more efficient and reliable **customer service protocols**."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "a34809d8-59c5-4027-95de-52924244bb3d",
+          "sentence": "No snacks at all were offered"
+        },
+        {
+          "id": "d5433867-8a38-438d-b6c2-a73fd98ab0ab",
+          "sentence": "United dd not want to provide me with a accomodation food or anything"
+        },
+        {
+          "id": "e2f8c873-e764-4c09-98fa-75bbf46e5077",
+          "sentence": "There was only food for purchase"
+        },
+        {
+          "id": "369b6ce0-ab49-4ee7-a69f-da40dcc1c1c8",
+          "sentence": "REACHED HOME AT 4 AMthese people are so clueless that they did not offer anything like snacks or lunch boxes as complimentary"
+        },
+        {
+          "id": "022cd15a-a888-4bab-8fb4-40744c25f090",
+          "sentence": "They didn't even offer us a meal voucher"
+        },
+        {
+          "id": "80c41f06-a813-490c-ba77-fdb355fea845",
+          "sentence": "No offer of vouchers for food"
+        },
+        {
+          "id": "2be29b77-4c3d-45a2-ad86-b7d55ec50b63",
+          "sentence": "Instead all I am offered are $20 in meal vouchers and $150 for not taking the hotel"
+        },
+        {
+          "id": "0b261b9f-7d81-43ad-854a-adc3b7165aee",
+          "sentence": "No offer of food vouchers, nothing"
+        },
+        {
+          "id": "507c619f-9f40-4212-b8da-10e1733f38af",
+          "sentence": "We had some issue with special meals which were not provided"
+        },
+        {
+          "id": "cfad36a6-167d-4a09-9232-2d567dc8bb8f",
+          "sentence": "Additionally they had no other flights to get me home, wouldn't put me on another airline, and wouldn't assist me with a hotel or at least meal voucher since their only suggestion was I wait in the airport overnight and try for a flight standby the next day"
+        },
+        {
+          "id": "af01726e-868a-49f1-8195-865404501948",
+          "sentence": "We then had to deal with being in a long line to get hotel, taxi and meal vouchers only to be told that United ran out of hotel vouchers and that we were on our own in terms of finding a hotel late in the evening"
+        },
+        {
+          "id": "a99f2408-0ad8-4fc1-aa00-035cd51c5c92",
+          "sentence": "There was nothing healthy to offer my hungry children and it was only after another two hours that we were offered vouchers for food"
+        }
+      ]
+    },
+    {
+      "title": "Positive Feedback on In-flight Food Experience",
+      "sentiment": "positive",
+      "sentences": [
+        "895ecb12-034f-4174-8dcd-6b52bf25edae",
+        "191cc180-b2f4-4019-b466-d1d1d3cd114d",
+        "c8a87f85-9c3d-4fb6-b8dd-647663af309a",
+        "23cfaf22-5117-4ed3-8815-1f73f1aa782d",
+        "45d6c764-baef-4259-809a-bec081415b18",
+        "a05ee860-adfa-480e-84ee-2220de5e6666",
+        "8aa0bbe1-c1fd-4556-9898-c636a517384b",
+        "a581eabf-b4bf-4319-a108-70a056fe6c41",
+        "52d09f87-5801-4ccf-b9ae-b86bcd7db6a1",
+        "53bcbdd0-84a8-4d96-83b7-1a54924170dd",
+        "477f1ae5-54e5-43ee-8451-189ba2a8bb97",
+        "5fd38ea4-36e7-4ccd-b394-c7e16d06bf76"
+      ],
+      "keyInsights": [
+        "Customers consistently praised the **attentiveness** of flight attendants, with multiple mentions of their **friendliness** and **service quality**.",
+        "The **food quality** was generally rated as **good** or **above average**, indicating that the airline's catering meets or exceeds customer expectations.",
+        "While most feedback was positive, there is room for improvement in **food selection**, as some customers rated it slightly lower, suggesting a need for more **variety** or **options**."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "895ecb12-034f-4174-8dcd-6b52bf25edae",
+          "sentence": "entertainment, food and the service were outstanding"
+        },
+        {
+          "id": "191cc180-b2f4-4019-b466-d1d1d3cd114d",
+          "sentence": "Flight itself was excellent with food above average"
+        },
+        {
+          "id": "c8a87f85-9c3d-4fb6-b8dd-647663af309a",
+          "sentence": "Flight was on time and food was decent"
+        },
+        {
+          "id": "23cfaf22-5117-4ed3-8815-1f73f1aa782d",
+          "sentence": "The flight was great- service was good - food selections - I would rate slightly low - at 6.5/10"
+        },
+        {
+          "id": "45d6c764-baef-4259-809a-bec081415b18",
+          "sentence": "The food and entertainment choices on the flight were great"
+        },
+        {
+          "id": "a05ee860-adfa-480e-84ee-2220de5e6666",
+          "sentence": "Really good airline, plenty of room, good service and good food"
+        },
+        {
+          "id": "8aa0bbe1-c1fd-4556-9898-c636a517384b",
+          "sentence": "Enjoyed in flight entertainment & the food was decent"
+        },
+        {
+          "id": "a581eabf-b4bf-4319-a108-70a056fe6c41",
+          "sentence": "Both flights were on time and the in-flight entertainment and food served was very acceptable"
+        },
+        {
+          "id": "52d09f87-5801-4ccf-b9ae-b86bcd7db6a1",
+          "sentence": "Food was good, flight attendants were attentive"
+        },
+        {
+          "id": "53bcbdd0-84a8-4d96-83b7-1a54924170dd",
+          "sentence": "The flight attendants were very friendly and the meal was great for airplane standards"
+        },
+        {
+          "id": "477f1ae5-54e5-43ee-8451-189ba2a8bb97",
+          "sentence": "The 7 1/2 hour flight was marked by very attentive Flight Attendants, adequate food and lots of entertainment options"
+        },
+        {
+          "id": "5fd38ea4-36e7-4ccd-b394-c7e16d06bf76",
+          "sentence": "First class is not what it used to be, that being said, this flight was better than when going to Hawaii because the food was better tasting and the flight attendants were very attentive"
+        }
+      ]
+    },
+    {
+      "title": "Positive Feedback on Drink Offerings",
+      "sentiment": "positive",
+      "sentences": [
+        "4a9eac86-926f-4459-947d-bd37127cbfb3",
+        "c8429883-e6a7-4774-ae30-a33e93916d57",
+        "d13a2216-66a9-452c-afdf-09ac85c26526",
+        "6553ddc0-34af-4655-b9a8-a9a79b3d149b",
+        "843ca50d-c500-4a5c-9491-57a3bd2349d2",
+        "8d02e7e4-b07e-4669-bec0-9b7be101c769",
+        "b9bd7798-2b51-4ef7-9992-73912f76df61",
+        "83d53dd3-44ad-4448-a28c-af4d6f9bffb2",
+        "094d5f80-657d-49a0-ae4a-bdf56796668a",
+        "960bc1a5-0b1d-4051-ad81-a34b2c2438e2"
+      ],
+      "keyInsights": [
+        "Customers appreciate the **generosity** in drink offerings, with multiple mentions of complimentary drinks, indicating a positive impact on customer satisfaction.",
+        "The **variety** of beverages available is noted as a strong point, suggesting that maintaining or expanding this selection could enhance the overall customer experience.",
+        "The **availability** of drinks upon request, rather than constant offers, is valued by customers, highlighting the importance of a balanced service approach."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "4a9eac86-926f-4459-947d-bd37127cbfb3",
+          "sentence": "rather that than constantly waking us offering drinks or towels"
+        },
+        {
+          "id": "c8429883-e6a7-4774-ae30-a33e93916d57",
+          "sentence": "We got food twice going and twice coming home"
+        },
+        {
+          "id": "d13a2216-66a9-452c-afdf-09ac85c26526",
+          "sentence": "Drinks when you want the food was so-so"
+        },
+        {
+          "id": "6553ddc0-34af-4655-b9a8-a9a79b3d149b",
+          "sentence": "The drinks standard"
+        },
+        {
+          "id": "843ca50d-c500-4a5c-9491-57a3bd2349d2",
+          "sentence": "They serve two meals in total with snacks in between"
+        },
+        {
+          "id": "8d02e7e4-b07e-4669-bec0-9b7be101c769",
+          "sentence": "The food"
+        },
+        {
+          "id": "b9bd7798-2b51-4ef7-9992-73912f76df61",
+          "sentence": "The food was terrific"
+        },
+        {
+          "id": "83d53dd3-44ad-4448-a28c-af4d6f9bffb2",
+          "sentence": "the food offering was terrible"
+        },
+        {
+          "id": "094d5f80-657d-49a0-ae4a-bdf56796668a",
+          "sentence": "this lady asked me what I wanted and told me I could have that and a beverage"
+        },
+        {
+          "id": "960bc1a5-0b1d-4051-ad81-a34b2c2438e2",
+          "sentence": "We received complimentary drinks and snacks and everything seemed very clean"
+        }
+      ]
+    },
+    {
+      "title": "Improvement Needed in Meal Quality",
+      "sentiment": "negative",
+      "sentences": [
+        "304f9393-1749-4148-b215-2af5c5034f27",
+        "55d3075e-6a61-49d9-912d-9a6ef7f843b7",
+        "7e327e1a-8197-4eaa-8a29-02233132bca0",
+        "39abcde5-fcdb-4efc-b188-76f41171b605",
+        "0b588b04-ded0-4c9c-b52d-abb746796710"
+      ],
+      "keyInsights": [
+        "Customers consistently describe the **food quality** as 'average' or 'poor', indicating a need for **quality improvement** to meet expectations.",
+        "The sentiment suggests a **disconnect** between the **price** and the **perceived value** of meals, especially given the high cost mentioned.",
+        "To enhance customer satisfaction, focus on **upgrading the menu** and ensuring that the food experience **justifies the price**."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "304f9393-1749-4148-b215-2af5c5034f27",
+          "sentence": "Nothing to write home about as far as food etc"
+        },
+        {
+          "id": "55d3075e-6a61-49d9-912d-9a6ef7f843b7",
+          "sentence": "Food average to poor"
+        },
+        {
+          "id": "7e327e1a-8197-4eaa-8a29-02233132bca0",
+          "sentence": "Food is very average"
+        },
+        {
+          "id": "39abcde5-fcdb-4efc-b188-76f41171b605",
+          "sentence": "Food was average"
+        },
+        {
+          "id": "0b588b04-ded0-4c9c-b52d-abb746796710",
+          "sentence": "One would think that for $7,000 one could get a decent meal"
+        }
+      ]
+    },
+    {
+      "title": "Vegetarian Food Experience Feedback",
+      "sentiment": "positive",
+      "sentences": [
+        "52c3037e-2a9a-44fc-9736-6de1330dfa15",
+        "75cb7926-d711-40fd-b360-04b776afe660",
+        "016e9a74-1881-4b64-941b-44027fc185d7"
+      ],
+      "keyInsights": [
+        "The **vegetarian food** quality is inconsistent, with one customer noting it is never good, suggesting a need for **improvement**.",
+        "Despite not being a vegetarian, one customer **prefers** the vegetarian Asian option, indicating a potential area to **expand** and promote this menu item.",
+        "Vegetarian options are **available** but described as only **acceptable**, implying an opportunity to enhance the **taste** and **variety** of these offerings."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "52c3037e-2a9a-44fc-9736-6de1330dfa15",
+          "sentence": "The vegetarian food is never good"
+        },
+        {
+          "id": "75cb7926-d711-40fd-b360-04b776afe660",
+          "sentence": "The food was quite good, I always have vegetarian Asian even though I'm not a veggie"
+        },
+        {
+          "id": "016e9a74-1881-4b64-941b-44027fc185d7",
+          "sentence": "Food was acceptable and was also available for vegetarians"
+        }
+      ]
+    }
+  ]
+}

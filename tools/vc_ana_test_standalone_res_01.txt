@@ -1,0 +1,94 @@
+Total number of sentences: 176
+Total unique sentences: 176
+
+Number of clusters formed: 10
+
+Cluster size distribution:
+  Min: 2
+  Max: 31
+  Mean: 6.70
+  Median: 3.5
+  Sizes: [31, 8, 5, 5, 4, 3, 3, 3, 3, 2]
+
+Total sentences in clusters: 67
+Total sentences in input: 176
+
+Total sentences appearing in result: 67
+Unique sentences in result: 61
+
+Duplicate sentences in clusters: 6
+Examples of duplicates:
+  'Still trying to get my money out' appears 2 times
+  'Withholding my money' appears 2 times
+  'They have lost trust with our money' appears 2 times
+  'Holding my money hostage' appears 2 times
+  'don’t know why money was taken out of my account twice' appears 2 times
+
+================================================================================
+CLUSTER QUALITY INSPECTION
+================================================================================
+
+Cluster 0 (31 sentences):
+  - Robinhood will trap your money
+  - Best Investment App
+  - Best investment app
+  - Bar none the best investment APP in the industry
+  - Been using this app for several years and they have truly made it a convenient way for everyone to invest
+  - Best UX for any investing app
+  - Excellent Investment App, very informative, stocks at the Robinhood App well explained
+  - I’m excited to continue growing my portfolio and this app has made investing easy for this newbie
+  - Love Robinhood above all other investment apps
+  - I am so glad I found out about Robinhood, what an easy to use app to invest in the stock market
+  ... and 21 more
+
+Cluster 1 (8 sentences):
+  - Doesn’t even let you withdrawal the money that u earned and Invested
+  - Locked up my money and made it extremely difficult to withdraw… do not recommend
+  - Holding my money hostage
+  - Be aware of having all your money there
+  - Still trying to get my money out
+  - Locked on old information from years ago, yes,  they keep your information forever even when you close out of the account
+  - Cannot withdraw money because their stupid app doesn’t work and they have no workaround, support is absolutely terrible
+  - They will lock your account and make you wait a week plus to review it and ask for all kinds of personal information
+
+Cluster 2 (5 sentences):
+  - I want my money back
+  - Give me back my money
+  - Withholding my money
+  - Let me do what I want with my money
+  - lets me buy assets with that money
+
+Cluster 3 (5 sentences):
+  - If people don’t know about investing
+  - Learn to Invest
+  - Trading and Investing
+  - I don’t know anything about investing in stocks
+  - Easy investing
+
+Cluster 4 (4 sentences):
+  - Have lost so much money
+  - Money lost in that period is your fault
+  - don’t know why money was taken out of my account twice
+  - Stole my money during downtime on leap year
+
+================================================================================
+SENTENCE CHARACTERISTICS
+================================================================================
+Sentence length (words):
+  Min: 2
+  Max: 82
+  Mean: 14.95
+  Median: 13.0
+
+Very short sentences (<= 3 words): 15
+Examples:
+  - Withholding my money
+  - Missing money
+  - Steals your money
+  - Best Investment App
+  - Best investment app
+  - Learn to Invest
+  - Trading and Investing
+  - Easy investing
+  - Ez money
+  - Market Manipulation

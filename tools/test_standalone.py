@@ -55,7 +55,7 @@ def main():
     # For testing, let's use a smaller subset (first 50 sentences)
     # This will make testing faster and cheaper
     logger.info(f"Total sentences in dataset: {len(raw_data['baseline'])}")
-    logger.info("Using first 50 sentences for testing")
+    logger.info(f"Using first {MAX_SENTENCES_FOR_TEST} sentences for testing")
 
     baseline_subset = raw_data['baseline'][:MAX_SENTENCES_FOR_TEST]
 

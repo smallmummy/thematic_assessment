@@ -7,6 +7,7 @@ from typing import List, Dict, Tuple
 from collections import defaultdict
 import numpy as np
 import hdbscan
+from sklearn.metrics.pairwise import cosine_similarity
 
 
 logger = logging.getLogger(__name__)
@@ -20,7 +21,8 @@ class ClusteringService:
         min_cluster_size: int = 3,
         min_samples: int = 1,
         cluster_selection_epsilon: float = 0.0,
-        metric: str = 'euclidean'
+        metric: str = 'euclidean',
+        similarity_threshold: float = 0.3
     ):
         """
         Initialize the clustering service.
@@ -30,15 +32,81 @@ class ClusteringService:
             min_samples: Minimum samples in a neighborhood for a point to be core
             cluster_selection_epsilon: Distance threshold for cluster selection
             metric: Distance metric to use
+            similarity_threshold: Minimum cosine similarity for soft assignment of noise points (default: 0.3)
         """
         self.min_cluster_size = min_cluster_size
         self.min_samples = min_samples
         self.cluster_selection_epsilon = cluster_selection_epsilon
         self.metric = metric
+        self.similarity_threshold = similarity_threshold
         logger.info(
-            "Initialized ClusteringService with min_cluster_size=%s, min_samples=%s, metric=%s",
-            min_cluster_size, min_samples, metric
+            "Initialized ClusteringService with min_cluster_size=%s, min_samples=%s, metric=%s, similarity_threshold=%s",
+            min_cluster_size, min_samples, metric, similarity_threshold
         )
+
+    def _soft_assign_noise_points(
+        self,
+        embeddings: np.ndarray,
+        cluster_labels: np.ndarray
+    ) -> np.ndarray:
+        """
+        Soft-assign noise points to nearest cluster using cosine similarity.
+
+        Args:
+            embeddings: numpy array of shape (n_sentences, embedding_dim)
+            cluster_labels: array of cluster assignments (-1 for noise)
+
+        Returns:
+            Updated cluster_labels array with soft-assigned points
+        """
+        noise_mask = cluster_labels == -1
+        n_noise = noise_mask.sum()
+
+        if n_noise == 0:
+            logger.info("No noise points to soft-assign")
+            return cluster_labels
+
+        # Calculate cluster centroids from hard-assigned clusters
+        unique_clusters = set(cluster_labels[~noise_mask])
+        if len(unique_clusters) == 0:
+            logger.warning("No valid clusters found for soft assignment")
+            return cluster_labels
+
+        centroids = {}
+        for cluster_id in unique_clusters:
+            cluster_mask = cluster_labels == cluster_id
+            centroids[cluster_id] = embeddings[cluster_mask].mean(axis=0)
+
+        # Soft-assign each noise point
+        n_assigned = 0
+        noise_indices = np.where(noise_mask)[0]
+
+        for idx in noise_indices:
+            # Calculate cosine similarity to each centroid
+            similarities = {}
+            for cluster_id, centroid in centroids.items():
+                sim = cosine_similarity(
+                    embeddings[idx].reshape(1, -1),
+                    centroid.reshape(1, -1)
+                )[0][0]
+                similarities[cluster_id] = sim
+
+            # Find best cluster
+            best_cluster = max(similarities, key=similarities.get)
+            best_sim = similarities[best_cluster]
+
+            # Assign if above threshold
+            if best_sim >= self.similarity_threshold:
+                cluster_labels[idx] = best_cluster
+                n_assigned += 1
+
+        logger.info(
+            "Soft assignment: %d/%d noise points assigned (%.1f%%), %d remain as noise",
+            n_assigned, n_noise, (n_assigned / n_noise * 100) if n_noise > 0 else 0,
+            n_noise - n_assigned
+        )
+
+        return cluster_labels
 
     def cluster_embeddings(
         self,
@@ -66,21 +134,38 @@ class ClusteringService:
                 min_samples=self.min_samples,
                 cluster_selection_epsilon=self.cluster_selection_epsilon,
                 metric=self.metric,
-                cluster_selection_method='eom',  # Excess of Mass
+                cluster_selection_method='leaf',  # Excess of Mass
                 prediction_data=True  # Enable prediction capabilities
             )
 
             cluster_labels = clusterer.fit_predict(embeddings)
 
-            # Count clusters (excluding noise label -1)
+            # Count hard clusters (excluding noise label -1)
             unique_labels = set(cluster_labels)
             n_clusters = len(unique_labels - {-1})
-            n_noise = list(cluster_labels).count(-1)
+            n_noise_before = list(cluster_labels).count(-1)
+            total_points = len(cluster_labels)
 
             logger.info(
-                "Clustering complete. Found %s clusters and %s noise points. Cluster distribution: %s",
-                n_clusters, n_noise,
-                dict(zip(*np.unique(cluster_labels, return_counts=True)))
+                "Hard clustering complete. Found %s clusters and %s noise points (%.1f%% in clusters)",
+                n_clusters, n_noise_before,
+                ((total_points - n_noise_before) / total_points * 100) if total_points > 0 else 0
+            )
+
+            # Apply soft assignment for noise points
+            cluster_labels = self._soft_assign_noise_points(embeddings, cluster_labels)
+
+            # Count final statistics after soft assignment
+            n_noise_after = list(cluster_labels).count(-1)
+            n_soft_assigned = n_noise_before - n_noise_after
+
+            logger.info(
+                "Final clustering: %s hard + %s soft = %s total assigned (%.1f%%), %s noise (%.1f%%)",
+                total_points - n_noise_before, n_soft_assigned,
+                total_points - n_noise_after,
+                ((total_points - n_noise_after) / total_points * 100) if total_points > 0 else 0,
+                n_noise_after,
+                (n_noise_after / total_points * 100) if total_points > 0 else 0
             )
 
             return cluster_labels

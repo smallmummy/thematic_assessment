@@ -1,0 +1,739 @@
+{
+  "clusters": [
+    {
+      "title": "Issues with Account Withdrawals and Restrictions",
+      "sentiment": "negative",
+      "sentences": [
+        "2dea163d-e365-40bd-b779-93b3fff85d79",
+        "a3c78498-8e29-4fcb-8055-ac4c4a87d3ef",
+        "66731acb-d252-4dfc-8695-245d21d76680",
+        "8116f6c3-536a-4c59-b4db-016851e4b52c",
+        "69fe36f9-2697-4438-8e46-c36969efa4d7",
+        "b1fe0d83-5b07-4a29-af61-1b7f15aa3c15",
+        "684f63dc-6b03-4528-be12-5c737992bd29",
+        "214bf0b7-09ad-4627-bf7e-3078870ae761",
+        "86d08567-f0fd-4b21-8857-a76ebfe8690b",
+        "1fa1fa2f-21c9-42f0-b0da-100342081173",
+        "31c6a34f-21e2-47c9-a654-3e4e09803272",
+        "4040c334-ac7a-4035-9586-1f71ee6d026e",
+        "ed2595d6-f9b4-4018-b20b-cecef939a113",
+        "8243be1b-b504-420b-9f9b-b2c40735d9b6",
+        "0844c5ff-f380-4943-8132-08e065b04bd0",
+        "ff261e04-2c30-4377-8541-53d3f659e00d",
+        "0aa6c097-1354-4c92-ba6d-6d0bed1e99ea",
+        "746011be-156e-42a0-a1d9-d34bc28f87ff",
+        "478ea17e-9e32-4968-8f0f-c84bf719887d"
+      ],
+      "keyInsights": [
+        "Customers report **difficulty withdrawing** funds due to account restrictions and lack of communication, leading to frustration and distrust.",
+        "There are frequent complaints about the **verification process**, which involves unrecognized photos and unnecessary personal information requests, causing withdrawal delays.",
+        "Numerous users experience **account lockouts** and poor customer support, resulting in prolonged access issues and financial losses."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "2dea163d-e365-40bd-b779-93b3fff85d79",
+          "sentence": "Doesn’t even let you withdrawal the money that u earned and Invested"
+        },
+        {
+          "id": "a3c78498-8e29-4fcb-8055-ac4c4a87d3ef",
+          "sentence": "Still trying to get my money out"
+        },
+        {
+          "id": "66731acb-d252-4dfc-8695-245d21d76680",
+          "sentence": "Locked up my money and made it extremely difficult to withdraw… do not recommend"
+        },
+        {
+          "id": "8116f6c3-536a-4c59-b4db-016851e4b52c",
+          "sentence": "I’m trying to withdraw some money and the pictures that I take of myself are not recognized"
+        },
+        {
+          "id": "69fe36f9-2697-4438-8e46-c36969efa4d7",
+          "sentence": "Holding my money hostage"
+        },
+        {
+          "id": "b1fe0d83-5b07-4a29-af61-1b7f15aa3c15",
+          "sentence": "Be aware of having all your money there"
+        },
+        {
+          "id": "684f63dc-6b03-4528-be12-5c737992bd29",
+          "sentence": "Give me back my money"
+        },
+        {
+          "id": "214bf0b7-09ad-4627-bf7e-3078870ae761",
+          "sentence": "Also makes it intentionally hard to withdrawal and requires to give up more personal information and sends verifications to devices you never connected to your network"
+        },
+        {
+          "id": "86d08567-f0fd-4b21-8857-a76ebfe8690b",
+          "sentence": "Locked on old information from years ago, yes,  they keep your information forever even when you close out of the account"
+        },
+        {
+          "id": "1fa1fa2f-21c9-42f0-b0da-100342081173",
+          "sentence": "Why am I Waking up to invest One of my crypto, withdrew I need help understanding why a percentage of it got withdrewn I need that returned Robinhood"
+        },
+        {
+          "id": "31c6a34f-21e2-47c9-a654-3e4e09803272",
+          "sentence": "You can lose tons of money when the app decides it wants to stop working or if you get locked out at a bad time"
+        },
+        {
+          "id": "4040c334-ac7a-4035-9586-1f71ee6d026e",
+          "sentence": "Cannot withdraw money because their stupid app doesn’t work and they have no workaround, support is absolutely terrible"
+        },
+        {
+          "id": "ed2595d6-f9b4-4018-b20b-cecef939a113",
+          "sentence": "Do a search on peoples accounts being closed and money locked up for over a year"
+        },
+        {
+          "id": "8243be1b-b504-420b-9f9b-b2c40735d9b6",
+          "sentence": "I had to reach out to customer support because I was trying to move money out and they had locked my account"
+        },
+        {
+          "id": "0844c5ff-f380-4943-8132-08e065b04bd0",
+          "sentence": "They have lost trust with our money"
+        },
+        {
+          "id": "ff261e04-2c30-4377-8541-53d3f659e00d",
+          "sentence": "I’m unable to deposit money from my debit card into my account like I used to be able to and she was unable to do anything had no clue no idea no reason nothing And that’s it with no customer support"
+        },
+        {
+          "id": "0aa6c097-1354-4c92-ba6d-6d0bed1e99ea",
+          "sentence": "The current 4.5% APR for holding cash is a game changer, especially since I rarely keep money in a bank"
+        },
+        {
+          "id": "746011be-156e-42a0-a1d9-d34bc28f87ff",
+          "sentence": "They will lock your account and make you wait a week plus to review it and ask for all kinds of personal information"
+        },
+        {
+          "id": "478ea17e-9e32-4968-8f0f-c84bf719887d",
+          "sentence": "It’s just money grabs everywhere"
+        }
+      ]
+    },
+    {
+      "title": "Account Issues and User Dissatisfaction",
+      "sentiment": "negative",
+      "sentences": [
+        "0aea95ef-ecd7-41ae-900b-248b67657d40",
+        "5ae5eebc-ffc1-495c-8ee5-572d46ca647b",
+        "789ddfdc-668e-4a68-9e93-d17611af616c",
+        "8f6c3a26-a03e-45b0-b9db-0707b169a769",
+        "9c619275-d98e-480b-a848-ca72f37e350f",
+        "e2709d3f-f0ae-462b-b94b-7c2dc8988ff8",
+        "b8158fb1-aa93-4721-9d3d-58e88772808e",
+        "fa5b6c4d-a373-4cc5-9b0d-504849faa481",
+        "6df00d7c-5aee-4e9c-b34d-7edc7a677407",
+        "13c29e31-7461-4b08-900b-56488ce076be",
+        "18c89db6-ceea-470b-9c26-d2a0cf7c1c2d",
+        "cc014a9c-31ee-43e3-90b8-6ca13b4ae289",
+        "7d4aa701-f1b2-41eb-b42c-c59e8e1d5091",
+        "53ea9abf-43be-4526-9556-9790a03bd2c4",
+        "c5214f3e-2ac0-45ef-8b11-1d0f7bb1e25d",
+        "03ca6eff-77ae-4887-82f3-7df6bb1b6af5",
+        "133b6f46-6bf0-4da1-8f7e-d628002f9efd",
+        "d6ef167e-c213-4b09-8fdf-2b5103e04f99",
+        "7b07e8df-ef47-4798-b505-701da35da83b"
+      ],
+      "keyInsights": [
+        "Several users report **account restrictions** and **frozen funds**, leading to significant frustration and financial inconvenience.",
+        "There is a perception that Robinhood's **customer service** is inadequate, with users finding it difficult to resolve issues through email or get timely **call backs**.",
+        "Concerns about **security** and **privacy** are prevalent, with claims that Robinhood may be selling user information to the **dark web**."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "0aea95ef-ecd7-41ae-900b-248b67657d40",
+          "sentence": "Robinhood will trap your money"
+        },
+        {
+          "id": "5ae5eebc-ffc1-495c-8ee5-572d46ca647b",
+          "sentence": "Excellent Investment App, very informative, stocks at the Robinhood App well explained"
+        },
+        {
+          "id": "789ddfdc-668e-4a68-9e93-d17611af616c",
+          "sentence": "Love Robinhood above all other investment apps"
+        },
+        {
+          "id": "8f6c3a26-a03e-45b0-b9db-0707b169a769",
+          "sentence": "I am so glad I found out about Robinhood, what an easy to use app to invest in the stock market"
+        },
+        {
+          "id": "9c619275-d98e-480b-a848-ca72f37e350f",
+          "sentence": "I never been an investor"
+        },
+        {
+          "id": "e2709d3f-f0ae-462b-b94b-7c2dc8988ff8",
+          "sentence": "Robinhood makes investing easy for people like me that may be a little apprehensive about jumping in"
+        },
+        {
+          "id": "b8158fb1-aa93-4721-9d3d-58e88772808e",
+          "sentence": "Robinhood is really easy to navigate and more user friendly to someone who is much more casual when it comes to investing"
+        },
+        {
+          "id": "fa5b6c4d-a373-4cc5-9b0d-504849faa481",
+          "sentence": "As a new investor, I've found Robinhood incredibly user friendly and visually clean"
+        },
+        {
+          "id": "6df00d7c-5aee-4e9c-b34d-7edc7a677407",
+          "sentence": "DO NOT INVEST WITH ROBINHOOD"
+        },
+        {
+          "id": "13c29e31-7461-4b08-900b-56488ce076be",
+          "sentence": "They do jot give you the option to delete account as well"
+        },
+        {
+          "id": "18c89db6-ceea-470b-9c26-d2a0cf7c1c2d",
+          "sentence": "Robinhood froze my crypto account, not allowing me to buy/send/receive crypto…so in order to get my money/crypto off the account, I am forced to sell crypto, and take a tax hit"
+        },
+        {
+          "id": "cc014a9c-31ee-43e3-90b8-6ca13b4ae289",
+          "sentence": "I have 80% money at fidelity , I will move to robinhood if we have those supported"
+        },
+        {
+          "id": "7d4aa701-f1b2-41eb-b42c-c59e8e1d5091",
+          "sentence": "Withholding my money"
+        },
+        {
+          "id": "53ea9abf-43be-4526-9556-9790a03bd2c4",
+          "sentence": "I’ve made some great money with Robin Hood and I will continue to do so"
+        },
+        {
+          "id": "c5214f3e-2ac0-45ef-8b11-1d0f7bb1e25d",
+          "sentence": "Level II Data at Robinhood Legend"
+        },
+        {
+          "id": "03ca6eff-77ae-4887-82f3-7df6bb1b6af5",
+          "sentence": "Please bring back the pie chart or offer some kind of portfolio composition view especially for long-term investors who care about allocation"
+        },
+        {
+          "id": "133b6f46-6bf0-4da1-8f7e-d628002f9efd",
+          "sentence": "Day trading laws"
+        },
+        {
+          "id": "d6ef167e-c213-4b09-8fdf-2b5103e04f99",
+          "sentence": "When you’re dealing with people’s money, they shouldn’t make it so hard to talk to someone which is why we’re transferring all the money out, rather just deal with a bank or credit union"
+        },
+        {
+          "id": "7b07e8df-ef47-4798-b505-701da35da83b",
+          "sentence": "They only allowed me to open up a Robinhood Managed account which requires a fee instead of an individually managed account where I choose what to invest in"
+        }
+      ]
+    },
+    {
+      "title": "Simplified Investing for Beginners",
+      "sentiment": "positive",
+      "sentences": [
+        "09585ea4-50de-4c93-89b3-dc1ff1bb4d12",
+        "9c619275-d98e-480b-a848-ca72f37e350f",
+        "b0d8069a-588f-435c-b16a-ea531030ce15",
+        "06e5e9dc-a1a5-41a0-9afd-a3a96eacd689",
+        "11d5869b-b75b-4be1-8b4f-ded57bd07e85",
+        "05b11e72-79c7-46fb-b8c0-4a69af95a51f",
+        "9f9f47fd-ee2f-4ef8-b49e-147a0a500bc8",
+        "155452b0-c281-49c3-aaf9-076271cdc675",
+        "eb84fdad-b71d-4231-b747-d2999bfa4300",
+        "bc999c22-eb82-49d7-af27-861f7b521c2a",
+        "d35cd56d-6190-4e70-ad87-df445edee2c7",
+        "4d1fa312-2594-4d3e-a7d2-57cac5f40f38",
+        "782b748e-034f-487a-9c62-803f03727e86",
+        "33a01f68-3fdf-48d1-b7a9-47553e78fbc3",
+        "2c4e6927-2fcf-4bcb-9978-db0c42066fd3",
+        "f3b1bad7-6134-4f75-97de-862dfa6e4af6"
+      ],
+      "keyInsights": [
+        "The platform has made **investing accessible** and **easy** for beginners, as evidenced by users who started investing at a young age and found the process **simple and rewarding**.",
+        "There is a strong emphasis on **educational support** for users with little to no knowledge about investing, as multiple users appreciate the simplicity and clarity in understanding investment concepts.",
+        "While the overall sentiment is positive, there are concerns about **account approval delays** and **excessive questioning**, which could be streamlined to enhance the user experience."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "09585ea4-50de-4c93-89b3-dc1ff1bb4d12",
+          "sentence": "New generation of investors"
+        },
+        {
+          "id": "9c619275-d98e-480b-a848-ca72f37e350f",
+          "sentence": "I never been an investor"
+        },
+        {
+          "id": "b0d8069a-588f-435c-b16a-ea531030ce15",
+          "sentence": "If people don’t know about investing"
+        },
+        {
+          "id": "06e5e9dc-a1a5-41a0-9afd-a3a96eacd689",
+          "sentence": "Learn to Invest"
+        },
+        {
+          "id": "11d5869b-b75b-4be1-8b4f-ded57bd07e85",
+          "sentence": "The future of investing for the small, medium, large and extra large investors"
+        },
+        {
+          "id": "05b11e72-79c7-46fb-b8c0-4a69af95a51f",
+          "sentence": "Trading and Investing"
+        },
+        {
+          "id": "9f9f47fd-ee2f-4ef8-b49e-147a0a500bc8",
+          "sentence": "I don’t know anything about investing in stocks"
+        },
+        {
+          "id": "155452b0-c281-49c3-aaf9-076271cdc675",
+          "sentence": "I turned 18, got a job and started investing and its been very simple, straightforward, and rewarding"
+        },
+        {
+          "id": "eb84fdad-b71d-4231-b747-d2999bfa4300",
+          "sentence": "Easy investing"
+        },
+        {
+          "id": "bc999c22-eb82-49d7-af27-861f7b521c2a",
+          "sentence": "No fine print just a great way to invest and learn while you’re doing it 👍🏼"
+        },
+        {
+          "id": "d35cd56d-6190-4e70-ad87-df445edee2c7",
+          "sentence": "This is why I’m afraid to invest more than just play monkey on this platform"
+        },
+        {
+          "id": "4d1fa312-2594-4d3e-a7d2-57cac5f40f38",
+          "sentence": "Market Manipulation"
+        },
+        {
+          "id": "782b748e-034f-487a-9c62-803f03727e86",
+          "sentence": "I enjoy the ease and access that I have to invest in our stock market"
+        },
+        {
+          "id": "33a01f68-3fdf-48d1-b7a9-47553e78fbc3",
+          "sentence": "It’s been the easiest way to get my foot in the door (with so little money) — and learn about stocks and crypto than anything else I’ve tried for over five years now"
+        },
+        {
+          "id": "2c4e6927-2fcf-4bcb-9978-db0c42066fd3",
+          "sentence": "Took a while to get account approved and it asks too much about why are you investing"
+        },
+        {
+          "id": "f3b1bad7-6134-4f75-97de-862dfa6e4af6",
+          "sentence": "User since 2017 as an undergrad student, investing what little $ I could scrounge together to learn about the stock market"
+        }
+      ]
+    },
+    {
+      "title": "User Experience and Investment Accessibility",
+      "sentiment": "positive",
+      "sentences": [
+        "ee068c4f-bca8-459a-bc85-dae26e08459f",
+        "3fa4218b-c62c-4712-bdb6-ce52fb201087",
+        "64cf4d28-a985-4d78-b706-5a531aa61be6",
+        "a3c78498-8e29-4fcb-8055-ac4c4a87d3ef",
+        "36d83254-c0b5-48de-b7b2-93db61a112f0",
+        "3f2638ce-c05e-4628-8b38-bfa557a611ef",
+        "e0870a01-3fc2-4feb-bc00-c15531f74ada",
+        "0562b6d0-5136-4c02-9389-46b9a90d6735",
+        "fa5b6c4d-a373-4cc5-9b0d-504849faa481",
+        "1572cc33-2ca0-4f6e-946b-c28bb16ed656",
+        "afbd2fe4-1de0-4dc4-b208-e8bec612643e",
+        "46b53da5-68dc-418a-9928-9efd976c09f2",
+        "ec9319a2-afb8-4825-b4ce-5eb003bb7b11",
+        "6167459e-5376-4953-943f-ab7bb3a3115e"
+      ],
+      "keyInsights": [
+        "The app is praised for its **ease of use** and **user interface**, making it a preferred choice over traditional platforms like UBS and Morgan Stanley.",
+        "Several users find the app **helpful for beginners**, noting it makes **investing easy** and provides confidence-building tools, which suggests a strong appeal to novice investors.",
+        "There are mixed feelings about the app's **financial impact**, with some users expressing concerns about **costs** and access to funds, indicating a need for improved transparency and support in financial transactions."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "ee068c4f-bca8-459a-bc85-dae26e08459f",
+          "sentence": "Been using this app for several years and they have truly made it a convenient way for everyone to invest"
+        },
+        {
+          "id": "3fa4218b-c62c-4712-bdb6-ce52fb201087",
+          "sentence": "I’m excited to continue growing my portfolio and this app has made investing easy for this newbie"
+        },
+        {
+          "id": "64cf4d28-a985-4d78-b706-5a531aa61be6",
+          "sentence": "Best UX for any investing app"
+        },
+        {
+          "id": "a3c78498-8e29-4fcb-8055-ac4c4a87d3ef",
+          "sentence": "Still trying to get my money out"
+        },
+        {
+          "id": "36d83254-c0b5-48de-b7b2-93db61a112f0",
+          "sentence": "slow to give it, this application has only made me waste my money"
+        },
+        {
+          "id": "3f2638ce-c05e-4628-8b38-bfa557a611ef",
+          "sentence": "I mean, I love the user interface and think this is a far better experience than the UBS and Morgan Stanley platforms where I keep 99.5% of my money"
+        },
+        {
+          "id": "e0870a01-3fc2-4feb-bc00-c15531f74ada",
+          "sentence": "I’m happy they include insider sales data from hedge fund’s and retail investors"
+        },
+        {
+          "id": "0562b6d0-5136-4c02-9389-46b9a90d6735",
+          "sentence": "I’m in the learning phase of investing to build for the future and this app is very helpful"
+        },
+        {
+          "id": "fa5b6c4d-a373-4cc5-9b0d-504849faa481",
+          "sentence": "As a new investor, I've found Robinhood incredibly user friendly and visually clean"
+        },
+        {
+          "id": "1572cc33-2ca0-4f6e-946b-c28bb16ed656",
+          "sentence": "The app is great for investing so I can buy more hookers and blow for my dog"
+        },
+        {
+          "id": "afbd2fe4-1de0-4dc4-b208-e8bec612643e",
+          "sentence": "No option to terminate account in the menu"
+        },
+        {
+          "id": "46b53da5-68dc-418a-9928-9efd976c09f2",
+          "sentence": "Best Investment App"
+        },
+        {
+          "id": "ec9319a2-afb8-4825-b4ce-5eb003bb7b11",
+          "sentence": "You do everything you can to slow the process down and make it unclear so you guys make money"
+        },
+        {
+          "id": "6167459e-5376-4953-943f-ab7bb3a3115e",
+          "sentence": "Ez money"
+        }
+      ]
+    },
+    {
+      "title": "Customer Concerns on Money Handling",
+      "sentiment": "negative",
+      "sentences": [
+        "ba8cfcdc-2644-44f8-a500-8d2a58517b93",
+        "684f63dc-6b03-4528-be12-5c737992bd29",
+        "0bd2dafb-c684-4e99-9384-6490d307b387",
+        "7d4aa701-f1b2-41eb-b42c-c59e8e1d5091",
+        "b1fe0d83-5b07-4a29-af61-1b7f15aa3c15",
+        "48e9e193-58d6-4fcf-a848-02012f24b503",
+        "384ceb09-975f-43ad-b0de-b9ef70db14a7",
+        "5f8893b1-c188-432d-a16d-7066f869ed93",
+        "6167459e-5376-4953-943f-ab7bb3a3115e",
+        "cd4d35a4-3414-43ec-8228-b347ebe0a90d",
+        "45dcf689-d6a8-46e3-902e-ffce7f9b67b7"
+      ],
+      "keyInsights": [
+        "Customers express a strong desire for **refunds**, indicating dissatisfaction with the current **account** management.",
+        "There is a **perception** that the platform is unfairly **allocating** money, benefiting the rich over the poor.",
+        "Users want more **control** over their money, suggesting a need for improved **flexibility** in account features."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "ba8cfcdc-2644-44f8-a500-8d2a58517b93",
+          "sentence": "I want my money back"
+        },
+        {
+          "id": "684f63dc-6b03-4528-be12-5c737992bd29",
+          "sentence": "Give me back my money"
+        },
+        {
+          "id": "0bd2dafb-c684-4e99-9384-6490d307b387",
+          "sentence": "give more money instead of receiving"
+        },
+        {
+          "id": "7d4aa701-f1b2-41eb-b42c-c59e8e1d5091",
+          "sentence": "Withholding my money"
+        },
+        {
+          "id": "b1fe0d83-5b07-4a29-af61-1b7f15aa3c15",
+          "sentence": "Be aware of having all your money there"
+        },
+        {
+          "id": "48e9e193-58d6-4fcf-a848-02012f24b503",
+          "sentence": "Like realistically I’m not taking my money and moving it to another platform"
+        },
+        {
+          "id": "384ceb09-975f-43ad-b0de-b9ef70db14a7",
+          "sentence": "Let me do what I want with my money"
+        },
+        {
+          "id": "5f8893b1-c188-432d-a16d-7066f869ed93",
+          "sentence": "2025 let’s make money"
+        },
+        {
+          "id": "6167459e-5376-4953-943f-ab7bb3a3115e",
+          "sentence": "Ez money"
+        },
+        {
+          "id": "cd4d35a4-3414-43ec-8228-b347ebe0a90d",
+          "sentence": "Honestly, just F-U!. Truly takes money from the poor and allocates it to the rich"
+        },
+        {
+          "id": "45dcf689-d6a8-46e3-902e-ffce7f9b67b7",
+          "sentence": "lets me buy assets with that money"
+        }
+      ]
+    },
+    {
+      "title": "Challenges with Options Trading and Account Clarity",
+      "sentiment": "negative",
+      "sentences": [
+        "924a24ab-c56c-4c6d-8533-79a5e8a187f3",
+        "ff92900f-64d5-439f-86ba-77d106142458",
+        "24a5c86a-9bf3-47a8-bf15-824a90f0f3f8",
+        "411d824e-8851-4d4f-9b52-cfcbd2cddddc",
+        "f841a905-3e4a-4e44-8a40-ee6c7e0c7fde",
+        "ec9319a2-afb8-4825-b4ce-5eb003bb7b11",
+        "47720b1d-1540-4dfe-acd8-3a0515e0c33a",
+        "47357594-ca6c-417b-ac55-182867911dd0",
+        "96a2c268-a477-4a23-9d4a-910c5e01da39",
+        "36d83254-c0b5-48de-b7b2-93db61a112f0",
+        "d132e191-d0c7-4045-b11d-d91a757f4652"
+      ],
+      "keyInsights": [
+        "Customers express **frustration** with the lack of **transparency** regarding initial costs and changes in option prices, which complicates their trading decisions.",
+        "There is a **persistent issue** with missing order history and unclear cost-related information, leading to dissatisfaction and potential loss of trust in the platform.",
+        "Users are concerned about the **speed** and **clarity** of the options process, feeling that it is deliberately slowed down, which affects their ability to make timely decisions and impacts their overall trading experience."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "924a24ab-c56c-4c6d-8533-79a5e8a187f3",
+          "sentence": "If you sell a multileg options combo it doesn't tell you what your initial cost was"
+        },
+        {
+          "id": "ff92900f-64d5-439f-86ba-77d106142458",
+          "sentence": "You have to know the price of options very clear or you don’t know how much more they have changed you"
+        },
+        {
+          "id": "24a5c86a-9bf3-47a8-bf15-824a90f0f3f8",
+          "sentence": "Especially when I have options expire today"
+        },
+        {
+          "id": "411d824e-8851-4d4f-9b52-cfcbd2cddddc",
+          "sentence": "I’m new to this and it gives me the information I need to make my decisions"
+        },
+        {
+          "id": "f841a905-3e4a-4e44-8a40-ee6c7e0c7fde",
+          "sentence": "several orders are missing from my history and options are tricky so I’m removing 2 stars"
+        },
+        {
+          "id": "ec9319a2-afb8-4825-b4ce-5eb003bb7b11",
+          "sentence": "You do everything you can to slow the process down and make it unclear so you guys make money"
+        },
+        {
+          "id": "47720b1d-1540-4dfe-acd8-3a0515e0c33a",
+          "sentence": "I had 100 call options that were set to expire that day"
+        },
+        {
+          "id": "47357594-ca6c-417b-ac55-182867911dd0",
+          "sentence": "I had an option call open for SPY and I was trying to close it out when I had planned to sell"
+        },
+        {
+          "id": "96a2c268-a477-4a23-9d4a-910c5e01da39",
+          "sentence": "I wish for you you guys to add trailing stop loss to options"
+        },
+        {
+          "id": "36d83254-c0b5-48de-b7b2-93db61a112f0",
+          "sentence": "slow to give it, this application has only made me waste my money"
+        },
+        {
+          "id": "d132e191-d0c7-4045-b11d-d91a757f4652",
+          "sentence": "Not the best option"
+        }
+      ]
+    },
+    {
+      "title": "Positive Sentiment on Investment App Features",
+      "sentiment": "positive",
+      "sentences": [
+        "46b53da5-68dc-418a-9928-9efd976c09f2",
+        "4dfc46b7-4e0c-4cee-a0c6-a18102b9f2c8",
+        "783c5a64-9455-4f86-a194-8a2a17e4bd29",
+        "64cf4d28-a985-4d78-b706-5a531aa61be6",
+        "51e6b814-c3fa-4ab0-a202-465d7fab355b",
+        "53366aaf-38ae-4c6e-b2c3-4ee019dd3ccd",
+        "d164d5ea-8cc1-4749-9b09-32db9f735947",
+        "9355cafb-9958-4004-bb00-7cf9f502e055",
+        "9e70690f-1e8d-4d7d-8ddf-1bf652d7be66"
+      ],
+      "keyInsights": [
+        "The app is frequently praised as the **best investment app**, indicating strong user satisfaction and market leadership.",
+        "Users appreciate the **modern financial app** design and security measures, suggesting a focus on maintaining these features could enhance trust and user retention.",
+        "Positive feedback highlights the app's **UX and functionality**, particularly the dark mode and options performance, which could be leveraged in marketing to attract users seeking intuitive and visually appealing platforms."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "46b53da5-68dc-418a-9928-9efd976c09f2",
+          "sentence": "Best Investment App"
+        },
+        {
+          "id": "4dfc46b7-4e0c-4cee-a0c6-a18102b9f2c8",
+          "sentence": "Best investment app"
+        },
+        {
+          "id": "783c5a64-9455-4f86-a194-8a2a17e4bd29",
+          "sentence": "Bar none the best investment APP in the industry"
+        },
+        {
+          "id": "64cf4d28-a985-4d78-b706-5a531aa61be6",
+          "sentence": "Best UX for any investing app"
+        },
+        {
+          "id": "51e6b814-c3fa-4ab0-a202-465d7fab355b",
+          "sentence": "Fantastic modern financial app with solid security measures to ensure your money is safe"
+        },
+        {
+          "id": "53366aaf-38ae-4c6e-b2c3-4ee019dd3ccd",
+          "sentence": "Great platform to trade and make big money"
+        },
+        {
+          "id": "d164d5ea-8cc1-4749-9b09-32db9f735947",
+          "sentence": "Horrible Ponzi Scheme app that will take your hard earned money"
+        },
+        {
+          "id": "9355cafb-9958-4004-bb00-7cf9f502e055",
+          "sentence": "Like the dark mode and relatively simpler UI and provided functionality (specifically options performance for graph view is great to have"
+        },
+        {
+          "id": "9e70690f-1e8d-4d7d-8ddf-1bf652d7be66",
+          "sentence": "Worst investment app"
+        }
+      ]
+    },
+    {
+      "title": "Customer Concerns on Account Fund Access",
+      "sentiment": "negative",
+      "sentences": [
+        "69fe36f9-2697-4438-8e46-c36969efa4d7",
+        "478ea17e-9e32-4968-8f0f-c84bf719887d",
+        "74dee38e-6a9f-4ad4-8419-9526c6cb00cb",
+        "9c578897-37c5-4bea-b68b-8e059619c3d1",
+        "6cc27144-7af4-4a59-865f-f9382120d8c8",
+        "9782e9de-797d-43df-9a54-8f3b538ef596",
+        "50c2522a-4e20-4784-86cf-069350000d3b",
+        "bbc1229a-0edf-4650-af58-9f3afda05767"
+      ],
+      "keyInsights": [
+        "Customers express frustration over **delayed access** to their funds, describing it as being 'held hostage' or 'criminal,' indicating a need for **improved transparency** and **faster processing**.",
+        "There is a perception of **financial exploitation**, with phrases like 'money grabs' and 'steals your money,' suggesting the company should address **trust issues** and enhance its **customer communication** strategies.",
+        "Feedback indicates a strong sentiment of being **victimized by algorithms**, with accusations of data misuse and manipulation, highlighting a critical need for **ethical data practices** and **clear communication** about data usage."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "69fe36f9-2697-4438-8e46-c36969efa4d7",
+          "sentence": "Holding my money hostage"
+        },
+        {
+          "id": "478ea17e-9e32-4968-8f0f-c84bf719887d",
+          "sentence": "It’s just money grabs everywhere"
+        },
+        {
+          "id": "74dee38e-6a9f-4ad4-8419-9526c6cb00cb",
+          "sentence": "So in 30 days when I get my money y’all are clipped 😂😂😂"
+        },
+        {
+          "id": "9c578897-37c5-4bea-b68b-8e059619c3d1",
+          "sentence": "They have held my money hostage for a week now it’s criminal"
+        },
+        {
+          "id": "6cc27144-7af4-4a59-865f-f9382120d8c8",
+          "sentence": "My Wife always asks, “so where’s my Money"
+        },
+        {
+          "id": "9782e9de-797d-43df-9a54-8f3b538ef596",
+          "sentence": "Steals your money"
+        },
+        {
+          "id": "50c2522a-4e20-4784-86cf-069350000d3b",
+          "sentence": "I’ll be the first one to volunteer my testimony when the trials against these scammers start pouring in after the extent of their manipulation cheating and corruption is discovered"
+        },
+        {
+          "id": "bbc1229a-0edf-4650-af58-9f3afda05767",
+          "sentence": "You’re robbing people using algos or selling our data to those using Algos to literally skm and rob us daily now"
+        }
+      ]
+    },
+    {
+      "title": "Trust Issues with Money Management",
+      "sentiment": "negative",
+      "sentences": [
+        "f1d3df75-d7f9-470d-880a-3ea8ebaa659a",
+        "0844c5ff-f380-4943-8132-08e065b04bd0",
+        "663f4d8e-0b1c-4343-a896-c830bc5ab06f",
+        "1442863d-ee5c-42ec-afc2-3a2b838ae821",
+        "d6ef167e-c213-4b09-8fdf-2b5103e04f99",
+        "e9a1c341-c534-45de-9d6a-180641686a62",
+        "29cb25e8-e1c2-47d0-b830-fd9c5cf70654"
+      ],
+      "keyInsights": [
+        "Customers express **distrust** in handling their money, with multiple mentions of lost trust and concerns about reliability.",
+        "The **difficulty** in communicating with the company is prompting customers to consider transferring their funds to more accessible institutions like banks or credit unions.",
+        "High **wiring costs** and perceived inefficiencies in money transfers contribute to negative sentiments, suggesting a need for more cost-effective and secure solutions."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "f1d3df75-d7f9-470d-880a-3ea8ebaa659a",
+          "sentence": "how can u trust them with your money"
+        },
+        {
+          "id": "0844c5ff-f380-4943-8132-08e065b04bd0",
+          "sentence": "They have lost trust with our money"
+        },
+        {
+          "id": "663f4d8e-0b1c-4343-a896-c830bc5ab06f",
+          "sentence": "If you can’t register under your current information, why trust them with your money or investments"
+        },
+        {
+          "id": "1442863d-ee5c-42ec-afc2-3a2b838ae821",
+          "sentence": "They are always improving and one of the few I trust with putting my money in"
+        },
+        {
+          "id": "d6ef167e-c213-4b09-8fdf-2b5103e04f99",
+          "sentence": "When you’re dealing with people’s money, they shouldn’t make it so hard to talk to someone which is why we’re transferring all the money out, rather just deal with a bank or credit union"
+        },
+        {
+          "id": "e9a1c341-c534-45de-9d6a-180641686a62",
+          "sentence": "Do not put your money in a unreachable F company"
+        },
+        {
+          "id": "29cb25e8-e1c2-47d0-b830-fd9c5cf70654",
+          "sentence": "Wiring costs so much money and for someone who works in banking I know how innefficient and risky sending wires are"
+        }
+      ]
+    },
+    {
+      "title": "Account Management Challenges and Frustrations",
+      "sentiment": "negative",
+      "sentences": [
+        "802c5019-55a9-447c-aa9d-70b5a15c3020",
+        "0bd2dafb-c684-4e99-9384-6490d307b387",
+        "1bf480a1-93d1-4f43-8ff8-33f065922e28",
+        "72d42a34-379d-423f-879e-a671ed073100",
+        "663f4d8e-0b1c-4343-a896-c830bc5ab06f",
+        "8abb95d5-6590-496b-baf6-812cb13785f7",
+        "6780c5af-d549-42e1-89f2-afa7767cea46"
+      ],
+      "keyInsights": [
+        "Users face **difficulty** in performing basic **account actions** like depositing money or selling shares, indicating a need for a more intuitive interface.",
+        "There is significant **dissatisfaction** with the **inaccessibility** of financial data such as DCA, Total return, and capital gains, which hinders effective financial planning.",
+        "The inability to **delete accounts** or reapply for brokerage services after rejection is causing frustration, suggesting a need for more **flexible account management** options."
+      ],
+      "mapped_sentences": [
+        {
+          "id": "802c5019-55a9-447c-aa9d-70b5a15c3020",
+          "sentence": "I is difficult at times finding how to do an action such as deposit money to my account or work with an existing stock"
+        },
+        {
+          "id": "0bd2dafb-c684-4e99-9384-6490d307b387",
+          "sentence": "give more money instead of receiving"
+        },
+        {
+          "id": "1bf480a1-93d1-4f43-8ff8-33f065922e28",
+          "sentence": "They sold my shares and I didn’t even get the money for it"
+        },
+        {
+          "id": "72d42a34-379d-423f-879e-a671ed073100",
+          "sentence": "DCA/Total return data is not available"
+        },
+        {
+          "id": "663f4d8e-0b1c-4343-a896-c830bc5ab06f",
+          "sentence": "If you can’t register under your current information, why trust them with your money or investments"
+        },
+        {
+          "id": "8abb95d5-6590-496b-baf6-812cb13785f7",
+          "sentence": "So I have been waiting to start investing money in stocks and well I found out after a week I can’t apply for a brokerage application again from the first time in 2022 and it’s now 2025 what the frick and I don’t like it and I can’t even delete my account"
+        },
+        {
+          "id": "6780c5af-d549-42e1-89f2-afa7767cea46",
+          "sentence": "Grateful that I hadn’t moved all my money there, I emptied out my account"
+        }
+      ]
+    }
+  ]
+}

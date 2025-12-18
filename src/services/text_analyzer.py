@@ -33,7 +33,8 @@ class TextAnalyzer:
         embedding_model: str = "all-MiniLM-L6-v2",
         sentiment_model: str = "distilbert-base-uncased-finetuned-sst-2-english",
         min_cluster_size: int = 3,
-        max_clusters: int = 20
+        max_clusters: int = 20,
+        clustering_config: dict = None
     ):
         """
         Initialize the text analyzer with all required services.
@@ -44,14 +45,21 @@ class TextAnalyzer:
             sentiment_model: Model name for sentiment analysis
             min_cluster_size: Minimum sentences per cluster
             max_clusters: Maximum number of clusters to return
+            clustering_config: Optional dict with additional clustering parameters
+                (e.g., {'similarity_threshold': 0.3, 'min_samples': 1})
         """
         logger.info("Initializing TextAnalyzer")
 
         self.max_clusters = max_clusters
 
+        # Prepare clustering service parameters
+        clustering_params = {'min_cluster_size': min_cluster_size}
+        if clustering_config:
+            clustering_params.update(clustering_config)
+
         # Initialize services
         self.embedding_service = EmbeddingService(model_name=embedding_model)
-        self.clustering_service = ClusteringService(min_cluster_size=min_cluster_size)
+        self.clustering_service = ClusteringService(**clustering_params)
         self.sentiment_service = SentimentService(model_name=sentiment_model)
         self.insight_service = InsightService(api_key=openai_api_key)
 

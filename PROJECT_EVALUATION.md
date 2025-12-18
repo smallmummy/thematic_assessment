@@ -378,6 +378,35 @@ thematic_assessment/
 - Prefers clusters with higher density
 - Alternative: 'leaf' (more granular clusters)
 
+**Noise Point Recovery: HDBSCAN + Soft Assignment**
+
+**Problem:** HDBSCAN marks low-density points as "noise" (label = -1), which can discard meaningful sentences that don't fit neatly into dense clusters.
+
+**Solution:** After hard clustering, soft-assign noise points to their nearest cluster using cosine similarity.
+
+**Implementation:** [src/services/clustering.py:47-109](src/services/clustering.py)
+
+**Algorithm:**
+1. HDBSCAN performs hard clustering → Creates clusters + noise points
+2. Calculate centroids for each hard cluster (mean of all embeddings in cluster)
+3. For each noise point:
+   - Compute cosine similarity to all cluster centroids
+   - Find the nearest cluster (highest similarity)
+   - If similarity ≥ `similarity_threshold` (default: 0.3): assign to that cluster
+   - Else: keep as noise (excluded from the next stage)
+4. Log statistics: hard cluster %, soft assignment %, remaining noise %
+
+
+**Threshold tuning guide:**
+
+| Threshold | Behavior | Use Case |
+|-----------|----------|----------|
+| 0.1 - 0.2 | **Aggressive** - Assigns most noise points | High recall needed, tolerate less coherent clusters |
+| 0.3 - 0.4 | **Balanced** (0.3 default) - Moderate assignment | General use, good trade-off |
+| 0.5 - 0.7 | **Conservative** - Only assigns clearly related points | High precision needed, strict cluster coherence |
+| 0.8 - 1.0 | **Very strict** - Almost no soft assignment | Minimal noise recovery, near-perfect match required |
+
+
 ### Sentiment Analysis Accuracy
 
 **What was implemented:**
