@@ -31,7 +31,7 @@ htmlcov/
 test_output_*.json
 
 # Models (downloaded during runtime)
-models/
+/models/
 
 # Logs
 *.log
